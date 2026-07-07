@@ -1,4 +1,0 @@
-{
-  "_note": "复制本文件为 gen_config.local.json 并填入 key。gen_config.local.json 已被 .gitignore 忽略，不会提交。",
-  "api_key": "sk-or-你的key"
-}
