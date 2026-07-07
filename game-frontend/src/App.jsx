@@ -5,6 +5,7 @@ import { resolveStageMeta } from './stageConfig.js';
 
 const UI_BASE = `${import.meta.env.BASE_URL}games/mmbddj/assets/ui`.replace(/\/$/, '');
 const VERSION = import.meta.env.VITE_APP_VERSION || '0.0.0';
+const SHOW_REWARD_FLOAT = false;
 const actionItems = [
   ['auto', '自动'],
   ['shop', '商城'],
@@ -232,10 +233,12 @@ export default function App() {
       <button className="reader-back" type="button" aria-label="返回" onClick={handleBack}>
         <img src={`${UI_BASE}/actionbar/back.webp`} alt="" />
       </button>
-      <button className="reward-float" type="button" onClick={() => showToast('领取成功，能量 +50')}>
-        <span className="reward-orb"><img src={`${UI_BASE}/userall/reward_badge.webp`} alt="" /></span>
-        <span className="reward-label">立即领取</span>
-      </button>
+      {SHOW_REWARD_FLOAT && (
+        <button className="reward-float" type="button" onClick={() => showToast('领取成功，能量 +50')}>
+          <span className="reward-orb"><img src={`${UI_BASE}/userall/reward_badge.webp`} alt="" /></span>
+          <span className="reward-label">立即领取</span>
+        </button>
+      )}
 
       {run.mode === 'chat' && charImage && (
         <img className={`character-art position-${stageMeta.position} ${stageMeta.artOnly ? 'art-only' : ''}`} src={charImage} alt={speakerName || visualCharacter?.name || '角色立绘'} onError={(event) => { event.currentTarget.style.display = 'none'; }} />
