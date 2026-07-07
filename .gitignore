@@ -11,6 +11,7 @@ dist/
 
 # Local/secrets
 .DS_Store
+.claude/
 *.local.json
 gen_config.local.json
 credentials.json
