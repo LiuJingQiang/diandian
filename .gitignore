@@ -1,35 +1,29 @@
-# Dependencies
-node_modules/
-.venv/
-venv/
-__pycache__/
-*.pyc
+# Repository scope
+# This repo tracks only the static frontend app, plus the GitHub Pages workflow
+# required to deploy it. Everything else in the workspace stays local.
+*
 
-# Build output
-dist/
-.vite/
+!/.gitignore
+!/.github/
+!/.github/workflows/
+!/.github/workflows/pages.yml
+!/game-frontend/
+!/game-frontend/**
+
+# Frontend dependencies and build output
+game-frontend/node_modules/
+game-frontend/dist/
+game-frontend/.vite/
 
 # Local/secrets
 .DS_Store
-.claude/
-*.local.json
-gen_config.local.json
-credentials.json
-*.pem
-
-# Large reverse-engineering binaries / raw dumps
-diandian.apk
-*.apk
-*.zip
-研究资料/apk解析/raw_unzip/
-研究资料/apk解析/jadx_full/
-研究资料/apk解析/jadx_res/
-reversed/decompiled/
-reversed/observed/raw/
-reversed/mock-server/data/db.json
+game-frontend/.DS_Store
+game-frontend/*.local.json
+game-frontend/credentials.json
+game-frontend/*.pem
 
 # Tool screenshots / transient captures
-*.png.tmp
-*.snap
-*.log
-.playwright-mcp/
+game-frontend/*.png.tmp
+game-frontend/*.snap
+game-frontend/*.log
+game-frontend/.playwright-mcp/
