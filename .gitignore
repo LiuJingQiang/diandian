@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build output
+dist/
+.vite/
+
+# Local/secrets
+.DS_Store
+*.local.json
+gen_config.local.json
+credentials.json
+*.pem
+
+# Large reverse-engineering binaries / raw dumps
+diandian.apk
+*.apk
+*.zip
+研究资料/apk解析/raw_unzip/
+研究资料/apk解析/jadx_full/
+研究资料/apk解析/jadx_res/
+reversed/decompiled/
+reversed/observed/raw/
+reversed/mock-server/data/db.json
+
+# Tool screenshots / transient captures
+*.png.tmp
+*.snap
+*.log
+.playwright-mcp/
