@@ -1,0 +1,127 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "book_id": "jinlanchengzui",
+    "book_name": "我在烬岚城替人承罪",
+    "type": "章节锁+承罪门槛复合型",
+    "consumer": ["game-server", "game-frontend"],
+    "based_on": "策划框架_通用/配置模板/gameplay_config.template.json"
+  },
+
+  "book": {
+    "book_id":            "jinlanchengzui",
+    "book_name":          "我在烬岚城替人承罪",
+    "type":               "chapter_lock_talisman_composite",
+    "core_currency_name": "钟能",
+    "gate_system_name":   "符册阁",
+    "gacha_pool_name":    "未来案卷池"
+  },
+
+  "currency": {
+    "energy":         { "name": "钟能",       "core": true, "decimals": 0 },
+    "star_dust":      { "name": "香烬砂",     "core": false },
+    "wish_star":      { "name": "案卷星",     "core": false },
+    "love_heart":     { "name": "香火愿力",   "core": false, "desc": "供街坊 · 影响檐灯巷存亡" },
+    "option_ticket":  { "name": "免罪符",     "unit": "minutes" },
+    "gate_ticket":    { "name": "符券",       "desc": "符册阁贴符抵扣" },
+    "card_fragment":  { "name": "案卷残片",   "desc": "重复案卷分解产物" }
+  },
+
+  "exchange_rate": {
+    "rmb_to_energy":         100,
+    "energy_to_wish_star":   100,
+    "energy_to_star_dust":   10,
+    "wish_ticket_to_star":   10,
+    "card_fragment_ssr":     100,
+    "card_fragment_sr":      30,
+    "card_fragment_r":       10,
+    "card_fragment_n":       1
+  },
+
+  "cost": {
+    "option_cost":          12,
+    "normal_unlock_cost":   12,
+    "visual_unlock_cost":   17,
+    "wish_single_cost":     10,
+    "wish_ten_cost":        100,
+    "cross_wish_cost":      10,
+    "detox_potion_energy":  50
+  },
+
+  "reward": {
+    "first_download_bonus":       30,
+    "start_app_bonus":            10,
+    "start_app_stardust":         5,
+    "start_app_wishing_star_num": 2,
+    "start_app_love_heart":       1,
+    "watch_ad_bonus":             12,
+    "watch_ads_limit_daily":      15,
+    "watch_ads_energy_max":       180,
+    "watch_ads_stardust_max":     900,
+    "return_gift_after_days":     3,
+    "return_gift_amount":         100,
+    "return_gift_alley_survival": 20
+  },
+
+  "vip": {
+    "unlock_discount":        0.85,
+    "start_app_bonus":        100,
+    "read_reward_multiplier": 2,
+    "watch_ad_bonus":         12,
+    "per_purchase_gift":      1000,
+    "exclusive_gate_ids":     ["V001", "V002", "V003", "V004", "V005"],
+    "dark_mist_daily_decay":  5,
+    "note": "VIP 独享 · 无 VIP 每日黑雾侵蚀衰减仅 -2"
+  },
+
+  "gacha_rates": { "SSR": 0.02, "SR": 0.12, "R": 0.40, "N": 0.46 },
+  "pity":        { "ssr_hard_pity": 90, "sr_soft_pity": 10, "ten_pull_guarantee": "SR+" },
+
+  "variables": {
+    "favor_max":     300,
+    "trait_max":     200,
+    "meter_max":     100,
+    "sin_layers_max": 30,
+    "favor_gates":   [50, 100, 150, 200, 260],
+    "trait_gates":   [10, 50, 100, 120, 150],
+    "sin_gates":     [3, 5, 10, 15, 20],
+    "meter_gates":   [20, 50, 80],
+    "effect_step":   { "small": 5, "medium": 10, "large": 20, "event": 50 }
+  },
+
+  "sin_corruption_formula": {
+    "on_sin_choice": {
+      "sin_layers":     "+1",
+      "bell_authority": "+10 ~ +30 (随承罪档位)",
+      "dark_mist":      "+5 ~ +20 (承罪越大侵蚀越深)"
+    },
+    "detox_channels": {
+      "chen_qingluo_potion_small": { "cost_energy": 50,  "cost_rmb": 3,  "effect": "dark_mist -20" },
+      "chen_qingluo_potion_large": { "cost_energy": 300, "cost_rmb": 19, "effect": "dark_mist -80, trust_luqingluo +30" },
+      "bailing_companion":         { "cost": 0, "condition": "trust_bailing >= 100", "effect": "dark_mist -10" },
+      "vip_daily_decay":           { "cost": 0, "condition": "vip=true", "effect": "dark_mist -5/day" },
+      "sleep_time_decay":          { "cost": 0, "condition": "vip=false", "effect": "dark_mist -2/day" }
+    }
+  },
+
+  "content_scale": {
+    "chapter_count":         20,
+    "paragraph_count":       360,
+    "choice_node_count":     60,
+    "paid_option_count":     200,
+    "talisman_lock_count":   10,
+    "visual_chapter_count":  12,
+    "ad_option_count":       10,
+    "avg_options_per_choice": 3.3
+  },
+
+  "budget_forecast": {
+    "single_playthrough_energy": 924,
+    "single_playthrough_rmb":    9.24,
+    "full_exploration_energy":   2604,
+    "full_exploration_rmb":      26.04,
+    "whale_full_collect_rmb":    328
+  },
+
+  "condition_codes": { "1": ">=", "2": ">", "3": "<=", "4": "<", "5": "==" }
+}

@@ -1,0 +1,380 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "book_id": "jinlanchengzui",
+    "volume": 1,
+    "volume_name": "檐灯巷不能烧",
+    "consumer": ["game-server", "game-frontend"],
+    "note": "20 章逐章配置 · 与 大纲/细纲_第XXX章.md 一一对应 · effect 字段驱动 game-server 结算",
+    "cost_ref": "见 gameplay_config.json (option_cost=12, visual_unlock_cost=17)"
+  },
+
+  "budget_summary": {
+    "single_playthrough_energy": 376,
+    "single_playthrough_rmb": 3.76,
+    "full_exploration_energy": 1204,
+    "full_exploration_rmb": 12.04,
+    "visual_chapters": 8,
+    "paid_options": 73,
+    "gate_options": 16,
+    "ad_options": 8
+  },
+
+  "chapters": [
+    {
+      "ch": 1, "title": "三日后的焚街案卷", "visual_lock": false,
+      "paid_options": 2, "gate_options": 0, "ad_options": 0,
+      "opening_gift": { "energy": 30, "type": "first_download" },
+      "story_ref": "大纲/细纲_第001章.md",
+      "choice_nodes": [
+        {
+          "id": "ch1_end_choice",
+          "prompt": "韩照命你记录白铃罪名,你的选择",
+          "options": [
+            { "id": "silent", "text": "按规矩沉默,保住差事", "cost": 0, "effects": { "alert_bellsi": -5, "trust_bailing": -20, "flag": "path_be1" } },
+            { "id": "help",   "text": "递代理认罪状,替白铃承罪", "cost": 8, "effects": { "sin_layers": 1, "trust_bailing": 30, "bell_authority": 10 }, "note": "首章免费教育型,cost=8 低于标准 12" }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 2, "title": "代理认罪状", "visual_lock": false,
+      "paid_options": 3, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第002章.md",
+      "choice_nodes": [
+        {
+          "id": "ch2_sign", "prompt": "验钟针即将刺入,你怎么办",
+          "options": [
+            { "id": "endure",    "text": "咬牙受刑", "cost": 12, "effects": { "dark_mist": 15, "bell_authority": 5 } },
+            { "id": "trigger_time", "text": "触发三息回钟", "cost": 12, "gate": { "sin_layers": { "op": ">=", "value": 1 } }, "effects": { "bell_authority": 10, "dark_mist": 5, "flag": "time_rewind_unlocked" }, "note": "首次能力解锁门槛" },
+            { "id": "call_bailing", "text": "让白铃扑向你分散注意", "cost": 12, "effects": { "trust_bailing": 20, "alert_bellsi": 10 } }
+          ]
+        }
+      ],
+      "unlock_ability": "three_breath_rewind"
+    },
+    {
+      "ch": 3, "title": "三息之内", "visual_lock": false,
+      "paid_options": 3, "gate_options": 0, "ad_options": 1,
+      "story_ref": "大纲/细纲_第003章.md",
+      "choice_nodes": [
+        {
+          "id": "ch3_escape", "prompt": "钟卫围住后廊,如何脱身",
+          "options": [
+            { "id": "ink_chaos",  "text": "打翻墨盆制造混乱", "cost": 12, "effects": { "mechanism_wit": 10, "alert_bellsi": 5 } },
+            { "id": "tongque_break", "text": "让铜雀撞开煤门", "cost": 12, "effects": { "trust_tongque": 20, "alert_bellsi": 10 } },
+            { "id": "watch_ad",   "text": "(看广告) 借街坊粥摊掩护", "cost": 0, "is_ad": true, "effects": { "trust_bailing": 10, "alley_survival": 5 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 4, "title": "檐灯巷不能烧", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 4, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第004章.md",
+      "climax": true, "climax_tag": "首爽点",
+      "choice_nodes": [
+        {
+          "id": "ch4_seal", "prompt": "韩照拿出封巷副纸,街坊恐慌",
+          "options": [
+            { "id": "hand_bailing", "text": "交出白铃换街坊命", "cost": 12, "effects": { "alley_survival": 20, "trust_bailing": -100, "flag": "path_be2" } },
+            { "id": "demand_review", "text": "以代理人身份要求复核灾名", "cost": 12, "effects": { "alley_survival": 5, "alert_bellsi": 10 } },
+            { "id": "burn_paper",   "text": "当众烧掉封巷副纸", "cost": 12, "gate": { "bell_authority": { "op": ">=", "value": 10 } }, "effects": { "alley_survival": 30, "alert_bellsi": 30, "dark_mist": 10, "trust_bailing": 30 } },
+            { "id": "compromise",   "text": "妥协交出证据副本", "cost": 0, "effects": { "alley_survival": 10, "trust_bailing": -30 } }
+          ]
+        }
+      ],
+      "hook": "承罪侵蚀发作 · 咳出黑血 · 引导 Ch05 陆青萝"
+    },
+    {
+      "ch": 5, "title": "黑市医师", "visual_lock": false,
+      "paid_options": 3, "gate_options": 0, "ad_options": 1,
+      "story_ref": "大纲/细纲_第005章.md",
+      "choice_nodes": [
+        {
+          "id": "ch5_luqingluo", "prompt": "陆青萝抽出黑雾铃血",
+          "options": [
+            { "id": "trust_her",     "text": "全信她的诊断", "cost": 12, "effects": { "trust_luqingluo": 30, "dark_mist": -15 } },
+            { "id": "suspect",       "text": "怀疑她动机", "cost": 12, "effects": { "trust_luqingluo": -10, "mechanism_wit": 10 } },
+            { "id": "pay_potion",    "text": "购买她的解毒药包", "cost": 12, "effects": { "dark_mist": -20, "trust_luqingluo": 10 }, "note": "游戏内首个解毒引导" },
+            { "id": "ad_free_potion","text": "(看广告) 用铜雀换草药", "cost": 0, "is_ad": true, "effects": { "dark_mist": -10, "trust_tongque": 10 } }
+          ]
+        }
+      ],
+      "detox_shop_first_prompt": true
+    },
+    {
+      "ch": 6, "title": "旧钟楼藏契", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 4, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第006章.md", "climax": true, "climax_tag": "身世震动+复核状",
+      "choice_nodes": [
+        {
+          "id": "ch6_review", "prompt": "旧契让你看见檐灯巷焚街结局,你怎么办",
+          "options": [
+            { "id": "escape",        "text": "撕掉契纸逃亡", "cost": 12, "effects": { "alert_bellsi": 20, "flag": "path_be4" } },
+            { "id": "confront",      "text": "找韩照对峙旧契来源", "cost": 12, "effects": { "alert_bellsi": 30 } },
+            { "id": "write_review",  "text": "写下代理复核状", "cost": 12, "gate": { "op": "OR", "clauses": [ { "bell_authority": { "op": ">=", "value": 30 } }, { "dark_mist": { "op": "<", "value": 40 } } ] }, "effects": { "bell_authority": 20, "trust_bailing": 30, "alert_bellsi": 20, "item": "review_petition" } },
+            { "id": "wait_more",     "text": "藏起契纸再想办法", "cost": 12, "effects": { "mechanism_wit": 10 } }
+          ]
+        }
+      ],
+      "first_gacha_trigger": "首次未来案卷池 SSR 展示"
+    },
+    {
+      "ch": 7, "title": "第二个名字", "visual_lock": false,
+      "paid_options": 3, "gate_options": 1, "ad_options": 1,
+      "story_ref": "大纲/细纲_第007章.md",
+      "choice_nodes": [
+        {
+          "id": "ch7_stall", "prompt": "陆青萝被押,如何拖延",
+          "options": [
+            { "id": "quote_law",  "text": "背旧例反驳韩照", "cost": 12, "gate": { "op": "OR", "clauses": [ { "mechanism_wit": { "op": ">=", "value": 30 } }, { "case_reading": { "op": ">=", "value": 30 } } ] }, "effects": { "trust_luqingluo": 20, "alert_bellsi": 10 } },
+            { "id": "beg_time",   "text": "跪求缓刑", "cost": 12, "effects": { "trust_luqingluo": 5, "alert_bellsi": -5 } },
+            { "id": "reveal_scheme","text": "揭发有人调包物证", "cost": 12, "effects": { "trust_bailing": 10, "alert_bellsi": 20 } },
+            { "id": "ad_tongque","text": "(看广告) 让铜雀干扰押解", "cost": 0, "is_ad": true, "effects": { "trust_tongque": 15 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 8, "title": "活价药包", "visual_lock": false,
+      "paid_options": 4, "gate_options": 0, "ad_options": 1,
+      "story_ref": "大纲/细纲_第008章.md",
+      "choice_nodes": [
+        {
+          "id": "ch8_investigate", "prompt": "潜入炉商药铺后库,先查什么",
+          "options": [
+            { "id": "check_ledger", "text": "翻账签", "cost": 12, "effects": { "case_reading": 20, "item": "medicine_ledger" } },
+            { "id": "check_pack",   "text": "偷一包药回去化验", "cost": 12, "effects": { "trust_luqingluo": 10, "item": "medicine_sample" } },
+            { "id": "eavesdrop",    "text": "偷听伙计对话", "cost": 12, "effects": { "mechanism_wit": 15 } },
+            { "id": "ad_map",       "text": "(看广告) 让铜雀画地形草图", "cost": 0, "is_ad": true, "effects": { "trust_tongque": 15 } },
+            { "id": "quick_leave",  "text": "偷完账签就走", "cost": 12, "effects": { "item": "medicine_ledger", "alert_bellsi": 5 } }
+          ]
+        }
+      ],
+      "evidence_gain": ["medicine_ledger"]
+    },
+    {
+      "ch": 9, "title": "替她承罪", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 4, "gate_options": 2, "ad_options": 0,
+      "story_ref": "大纲/细纲_第009章.md", "climax": true, "climax_tag": "第二次承罪·辨雾权解锁",
+      "choice_nodes": [
+        {
+          "id": "ch9_second_sin", "prompt": "韩照逼陆青萝认罪",
+          "options": [
+            { "id": "let_her_die",    "text": "不管她,保存实力", "cost": 0, "effects": { "trust_luqingluo": -100, "flag": "luqingluo_dead" } },
+            { "id": "confront_stall", "text": "跟韩照对峙拖时间", "cost": 12, "effects": { "alert_bellsi": 20, "trust_luqingluo": 20 } },
+            { "id": "second_agent",   "text": "写第二份代理认罪状", "cost": 12, "gate": { "op": "AND", "clauses": [ { "trust_bailing": { "op": ">=", "value": 50 } }, { "trust_luqingluo": { "op": ">=", "value": 30 } } ] }, "effects": { "sin_layers": 1, "bell_authority": 15, "dark_mist": 20, "trust_luqingluo": 50, "flag": "fog_sight_unlocked" } },
+            { "id": "witness_only",   "text": "(看广告) 只作证不承罪", "cost": 0, "is_ad": true, "effects": { "trust_luqingluo": 10, "alert_bellsi": 10 }, "note": "错过辨雾权" }
+          ]
+        }
+      ],
+      "unlock_ability": "fog_sight"
+    },
+    {
+      "ch": 10, "title": "雾眼开", "visual_lock": false,
+      "paid_options": 3, "gate_options": 1, "ad_options": 1,
+      "story_ref": "大纲/细纲_第010章.md",
+      "choice_nodes": [
+        {
+          "id": "ch10_train", "prompt": "如何驾驭辨雾权带来的剧痛",
+          "options": [
+            { "id": "hard_train",     "text": "咬牙硬撑", "cost": 12, "effects": { "case_reading": 30, "dark_mist": 15 } },
+            { "id": "bell_help",      "text": "让白铃用铃声辅助", "cost": 12, "gate": { "op": "AND", "clauses": [ { "flag_has": "fog_sight_unlocked" }, { "trust_bailing": { "op": ">=", "value": 50 } } ] }, "effects": { "case_reading": 30, "dark_mist": 10, "trust_bailing": 10, "item": "well_map" } },
+            { "id": "luqingluo_help", "text": "让陆青萝压制侵蚀", "cost": 12, "effects": { "case_reading": 20, "dark_mist": 5, "trust_luqingluo": 10 } },
+            { "id": "ad_slow",        "text": "(看广告) 分几天慢慢练", "cost": 0, "is_ad": true, "effects": { "case_reading": 15 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 11, "title": "西市井口", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 5, "gate_options": 1, "ad_options": 1,
+      "story_ref": "大纲/细纲_第011章.md",
+      "choice_nodes": [
+        {
+          "id": "ch11_underground", "prompt": "钟卫巡查逼近,如何避险",
+          "options": [
+            { "id": "hide_wall",   "text": "贴墙屏息", "cost": 12, "effects": { "mechanism_wit": 10 } },
+            { "id": "rewind",      "text": "触发三息回钟", "cost": 12, "gate": { "op": "AND", "clauses": [ { "bell_authority": { "op": ">=", "value": 50 } }, { "dark_mist": { "op": "<", "value": 60 } } ] }, "effects": { "dark_mist": 10, "item": "fog_sample" } },
+            { "id": "bailing_ring","text": "让白铃摇铃引开", "cost": 12, "effects": { "trust_bailing": 10, "alert_bellsi": 15 } },
+            { "id": "tongque_deploy","text": "让铜雀释放金属噪声", "cost": 12, "effects": { "trust_tongque": 10 } },
+            { "id": "ad_smoke",    "text": "(看广告) 用陆青萝药包烟雾", "cost": 0, "is_ad": true, "effects": { "trust_luqingluo": 5 } }
+          ]
+        }
+      ],
+      "evidence_gain": ["fog_sample", "half_ledger_nail"]
+    },
+    {
+      "ch": 12, "title": "账本不在井下", "visual_lock": false,
+      "paid_options": 3, "gate_options": 1, "ad_options": 1,
+      "story_ref": "大纲/细纲_第012章.md",
+      "choice_nodes": [
+        {
+          "id": "ch12_follow", "prompt": "账本被转移,如何追",
+          "options": [
+            { "id": "deduce_shen",  "text": "根据账钉推理是沈砚清", "cost": 12, "gate": { "case_reading": { "op": ">=", "value": 50 } }, "effects": { "case_reading": 20, "item": "shen_yanching_clue" } },
+            { "id": "chase_bank",   "text": "追到票庄后院", "cost": 12, "effects": { "alert_bellsi": 10 } },
+            { "id": "ad_intel",     "text": "(看广告) 让铜雀跟踪票庄伙计", "cost": 0, "is_ad": true, "effects": { "trust_tongque": 10, "item": "shen_yanching_clue" } },
+            { "id": "wait_bait",    "text": "留下诱饵等他上钩", "cost": 12, "effects": { "mechanism_wit": 15 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 13, "title": "封巷令", "visual_lock": false,
+      "paid_options": 4, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第013章.md",
+      "on_enter_effect": { "alley_survival": -30, "alert_bellsi": 30 },
+      "hearth_favor_prompt": "檐灯巷存亡告急 · 引导香火愿力包 ¥3",
+      "choice_nodes": [
+        {
+          "id": "ch13_delay", "prompt": "如何争取时间",
+          "options": [
+            { "id": "buy_1night",   "text": "以代理复核状换一夜期限", "cost": 12, "gate": { "bell_authority": { "op": ">=", "value": 80 } }, "effects": { "alley_survival": 10 } },
+            { "id": "sacrifice_bailing", "text": "假交出白铃拖时间", "cost": 12, "effects": { "trust_bailing": -60, "alley_survival": 20 } },
+            { "id": "evacuate",     "text": "组织街坊撤离", "cost": 12, "effects": { "alley_survival": 15, "flag": "evacuated" } },
+            { "id": "burn_more",    "text": "再烧更多封条", "cost": 12, "effects": { "alley_survival": 5, "alert_bellsi": 30, "dark_mist": 5 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 14, "title": "街坊作证", "visual_lock": false,
+      "paid_options": 5, "gate_options": 1, "ad_options": 1,
+      "story_ref": "大纲/细纲_第014章.md",
+      "choice_nodes": [
+        {
+          "id": "ch14_witness", "prompt": "挨家收证词,先找谁",
+          "options": [
+            { "id": "granny_congee",  "text": "粥铺阿婆 → 病籍证词", "cost": 12, "effects": { "alley_survival": 10, "item": "medical_record" } },
+            { "id": "teahouse_owner", "text": "茶铺老板娘 → 炉商药包收据", "cost": 12, "effects": { "alley_survival": 10, "item": "medicine_receipt" } },
+            { "id": "student_water",  "text": "季灯带学舍孩子 → 井水记录", "cost": 12, "effects": { "alley_survival": 10, "item": "well_water_log" } },
+            { "id": "all_witness",    "text": "发动全街坊集体作证", "cost": 12, "gate": { "op": "AND", "clauses": [ { "alley_survival": { "op": ">=", "value": 50 } }, { "trust_bailing": { "op": ">=", "value": 100 } } ] }, "effects": { "alley_survival": 20, "item_all": ["medical_record", "medicine_receipt", "well_water_log"] } },
+            { "id": "ad_flyer",       "text": "(看广告) 用铜雀撒传单动员", "cost": 0, "is_ad": true, "effects": { "trust_tongque": 10, "alley_survival": 5 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 15, "title": "白铃敲钟", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 3, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第015章.md", "climax": true, "climax_tag": "情绪爆点",
+      "choice_nodes": [
+        {
+          "id": "ch15_ring", "prompt": "白铃上旧钟楼,你劝她还是陪她",
+          "options": [
+            { "id": "stop_her",    "text": "强行拉下她", "cost": 12, "effects": { "trust_bailing": -50, "flag": "no_bell_evidence" } },
+            { "id": "with_her",    "text": "陪她一起敲", "cost": 12, "gate": { "trust_bailing": { "op": ">=", "value": 150 } }, "effects": { "trust_bailing": 40, "alert_bellsi": 40, "dark_mist": 5, "flag": "shen_appears" } },
+            { "id": "block_below", "text": "在下面挡住钟卫", "cost": 12, "effects": { "trust_bailing": 20, "alert_bellsi": 20 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 16, "title": "炉商账房", "visual_lock": false,
+      "paid_options": 4, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第016章.md",
+      "choice_nodes": [
+        {
+          "id": "ch16_save_ledger", "prompt": "韩照要求销毁账本",
+          "options": [
+            { "id": "rewind_save",  "text": "触发三息回钟保住账本", "cost": 12, "gate": { "op": "AND", "clauses": [ { "flag_has": "time_rewind_unlocked" }, { "dark_mist": { "op": "<", "value": 70 } } ] }, "effects": { "case_reading": 30, "dark_mist": 5, "item": "half_ledger" } },
+            { "id": "shen_help",    "text": "让沈砚清抵挡", "cost": 12, "effects": { "trust_luqingluo": 5, "alert_bellsi": 10 } },
+            { "id": "bailing_bell", "text": "白铃摇铃干扰", "cost": 12, "effects": { "trust_bailing": 20, "item": "half_ledger" } },
+            { "id": "burn_ledger",  "text": "宁毁账本不留破绽", "cost": 12, "effects": { "trust_luqingluo": -20, "flag": "no_ledger" } }
+          ]
+        }
+      ],
+      "evidence_gain": ["half_ledger"]
+    },
+    {
+      "ch": 17, "title": "旧钟楼审夜", "visual_lock": false,
+      "paid_options": 4, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第017章.md",
+      "choice_nodes": [
+        {
+          "id": "ch17_hold_shen", "prompt": "沈砚清动摇要交账,如何劝住",
+          "options": [
+            { "id": "trust_persuade", "text": "用信任说服", "cost": 12, "gate": { "op": "OR", "clauses": [ { "trust_bailing": { "op": ">=", "value": 100 } }, { "trust_luqingluo": { "op": ">=", "value": 100 } } ] }, "effects": { "trust_luqingluo": 20 } },
+            { "id": "threat_shen",    "text": "威胁沈砚清", "cost": 12, "effects": { "mechanism_wit": 15, "alert_bellsi": 10 } },
+            { "id": "confront_han",   "text": "跟韩照对话拆穿制度", "cost": 12, "effects": { "alert_bellsi": 20, "dark_mist": 10 } },
+            { "id": "tongque_delay",  "text": "让铜雀+白铃+陆青萝拖住钟卫", "cost": 12, "effects": { "trust_tongque": 15, "trust_bailing": 10, "trust_luqingluo": 10 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 18, "title": "二十年前的名字", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 3, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第018章.md", "climax": true, "climax_tag": "身世反转",
+      "choice_nodes": [
+        {
+          "id": "ch18_open_chest", "prompt": "原始契柜出现在旧钟楼地下",
+          "options": [
+            { "id": "open_alone",   "text": "独自打开契柜", "cost": 12, "gate": { "op": "AND", "clauses": [ { "bell_authority": { "op": ">=", "value": 100 } }, { "trust_bailing": { "op": ">=", "value": 150 } } ] }, "effects": { "bell_authority": 30, "trust_bailing": 20, "flag": "citywide_hearing_unlocked", "item": "father_seal" } },
+            { "id": "with_bailing", "text": "让白铃陪你开", "cost": 12, "effects": { "trust_bailing": 30, "item": "father_seal" } },
+            { "id": "delay_open",   "text": "先藏起不看", "cost": 12, "effects": { "dark_mist": -5, "flag": "delay_truth" } }
+          ]
+        }
+      ],
+      "unlock_ability": "citywide_bell_hearing"
+    },
+    {
+      "ch": 19, "title": "代理复核开庭", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 5, "gate_options": 2, "ad_options": 0,
+      "story_ref": "大纲/细纲_第019章.md", "climax": true, "climax_tag": "大爆点·公开翻案",
+      "hard_gate_check": {
+        "true_end_requires": {
+          "op": "AND",
+          "clauses": [
+            { "alley_survival": { "op": ">=", "value": 30 } },
+            { "item_has": "half_ledger" },
+            { "item_has": "medicine_ledger" },
+            { "item_has_any_of": ["medical_record", "medicine_receipt", "well_water_log"] }
+          ]
+        },
+        "normal_end_requires": {
+          "op": "AND",
+          "clauses": [
+            { "alley_survival": { "op": ">=", "value": 30 } },
+            { "evidence_count": { "op": ">=", "value": 3 } }
+          ]
+        }
+      },
+      "choice_nodes": [
+        {
+          "id": "ch19_hearing", "prompt": "提交代理复核状",
+          "options": [
+            { "id": "trial_normal",   "text": "开庭反咬炉商会", "cost": 12, "gate": { "flag_has": "citywide_hearing_unlocked" }, "effects": { "alley_survival": 50, "alert_bellsi": -30 } },
+            { "id": "trial_full",     "text": "同时公开季父旧契", "cost": 12, "gate": { "item_has": "father_seal" }, "effects": { "sin_layers": 1, "flag": "hidden_end_ch20" } },
+            { "id": "flee",           "text": "放弃复核逃亡", "cost": 0, "effects": { "flag": "path_be4" } },
+            { "id": "half_hearing",   "text": "只公开半本账,保留季父线", "cost": 12, "effects": { "alley_survival": 30, "alert_bellsi": -10, "flag": "normal_end" } },
+            { "id": "delay_more",     "text": "再拖一夜找证据", "cost": 12, "effects": { "alley_survival": -20 } }
+          ]
+        }
+      ]
+    },
+    {
+      "ch": 20, "title": "永久代理人", "visual_lock": true, "visual_unlock_cost": 17,
+      "paid_options": 3, "gate_options": 1, "ad_options": 0,
+      "story_ref": "大纲/细纲_第020章.md", "climax": true, "climax_tag": "卷终·永久烙印",
+      "ending_branches": {
+        "true_end":       { "condition": { "op": "AND", "clauses": [ { "dark_mist": { "op": "<", "value": 80 } }, { "flag_has": "hidden_end_ch20" } ] }, "name": "永久代理人 · True End 隐藏父子相认" },
+        "normal_end":     { "condition": { "dark_mist": { "op": "<", "value": 80 } }, "name": "永久代理人 · Normal End" },
+        "be_corruption":  { "condition": { "dark_mist": { "op": ">=", "value": 80 } }, "name": "钟鬼 BE" },
+        "be_flee":        { "condition": { "flag_has": "path_be4" }, "name": "逃亡结局(引第二卷)" }
+      },
+      "choice_nodes": [
+        {
+          "id": "ch20_accept", "prompt": "罪钟要求永久登记",
+          "options": [
+            { "id": "accept",       "text": "接受烙印,守住檐灯巷", "cost": 12, "gate": { "dark_mist": { "op": "<", "value": 80 } }, "effects": { "sin_layers": 2, "bell_authority": 50 } },
+            { "id": "reject",       "text": "拒绝烙印,承担代价", "cost": 12, "effects": { "alley_survival": -30, "flag": "reject_stamp" } },
+            { "id": "with_bailing", "text": "让白铃陪你烙印", "cost": 12, "gate": { "trust_bailing": { "op": ">=", "value": 200 } }, "effects": { "sin_layers": 2, "trust_bailing": 50, "bell_authority": 60 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

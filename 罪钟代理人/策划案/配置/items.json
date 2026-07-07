@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "book_id": "jinlanchengzui",
+    "consumer": ["game-server", "game-frontend"],
+    "note": "本作道具 = 4 大类: 消耗品(可购) + 剧情证据(不可购,只能剧情获得) + 钟符(替代衣橱) + 收藏(未来案卷抽卡)"
+  },
+
+  "consumables": [
+    { "id": "detox_potion_small", "name": "陆青萝药包·小", "type": "detox", "price_rmb": 3, "price_energy": 50,  "effects": { "dark_mist": -20 }, "shop_first_prompt_at": "ch5", "note": "低付费高频复购钩子" },
+    { "id": "detox_potion_large", "name": "陆青萝药包·大", "type": "detox", "price_rmb": 19, "effects": { "dark_mist": -80, "trust_luqingluo": 30 }, "shop_prompt_at": ["ch10", "ch17"] },
+    { "id": "detox_weekly_card",  "name": "陆青萝周药方", "type": "subscription", "price_rmb": 6, "duration_days": 7, "effects": { "dark_mist_daily": -20 }, "tag": "周卡型" },
+    { "id": "option_ticket_10m",  "name": "10 分钟免罪符", "type": "ticket", "acquire": ["签到 D3"], "effect": "期间选项 0 钟能" },
+    { "id": "option_ticket_30m",  "name": "30 分钟免罪符", "type": "ticket", "acquire": ["签到 D7"], "effect": "期间选项 0 钟能" },
+    { "id": "chapter_key",        "name": "灾罪钥匙",     "type": "unlock", "acquire": ["活动礼包"], "effect": "直接解锁 1 视觉章(不扣钟能)" },
+    { "id": "case_fragment",      "name": "案卷残片",     "type": "currency", "acquire": ["未来案卷重复分解"], "exchange": { "30_fragments": "100 wish_star", "100_fragments": "100 wish_star" } },
+    { "id": "rename_token",       "name": "代书铭牌",     "type": "cosmetic", "price_rmb": 3, "price_energy": 30, "acquire": ["首充送 1"], "effect": "修改主角姓名" }
+  ],
+
+  "story_evidence": {
+    "_note": "剧情证据卡 · 无法购买 · 只能通过章节 choice 获得 · Ch19 复核门槛需 4/4",
+    "items": [
+      { "id": "review_petition",  "name": "代理复核状",       "acquired_at": "ch6",  "critical": true,  "note": "开启全城钟听审的前置" },
+      { "id": "medicine_ledger",  "name": "炉商药包账签",     "acquired_at": "ch8",  "critical": true,  "ch19_gate": true, "note": "证明净疫药包来自黑雾残渣" },
+      { "id": "medicine_sample",  "name": "净疫药包样本",     "acquired_at": "ch8",  "critical": false, "note": "陆青萝化验用" },
+      { "id": "well_map",         "name": "西市井口地形草图", "acquired_at": "ch10", "critical": false },
+      { "id": "fog_sample",       "name": "黑雾井样本",       "acquired_at": "ch11", "critical": false },
+      { "id": "half_ledger_nail", "name": "半枚炉商会账钉",   "acquired_at": "ch11", "critical": false, "note": "指向沈砚清" },
+      { "id": "shen_yanching_clue","name": "沈砚清线索",      "acquired_at": "ch12", "critical": false },
+      { "id": "medical_record",   "name": "粥铺阿婆病籍证词", "acquired_at": "ch14", "critical": false, "ch19_alt_gate": true },
+      { "id": "medicine_receipt", "name": "茶铺老板娘药包收据","acquired_at": "ch14", "critical": false, "ch19_alt_gate": true },
+      { "id": "well_water_log",   "name": "星灯学舍井水记录", "acquired_at": "ch14", "critical": false, "ch19_alt_gate": true },
+      { "id": "half_ledger",      "name": "沈砚清半本账",     "acquired_at": "ch16", "critical": true,  "ch19_gate": true, "note": "证明炉商会买通鸣钟司" },
+      { "id": "father_seal",      "name": "季父原始造钟契",   "acquired_at": "ch18", "critical": true,  "note": "触发全城钟听审 · 隐藏结局钥匙" }
+    ]
+  },
+
+  "talismans": {
+    "_note": "钟符 = 本作替代言情衣橱的门槛突破系统 · 25 张(20 基础/稀有 + 5 VIP) · variable_handlers 加属性",
+    "items": [
+      { "id": "T001", "name": "素墨行书符", "rarity": "N",   "acquire": { "type": "story",     "at": "ch1" },                            "wear_cost": 0, "handlers": [{ "var": "case_reading",   "op": "+", "val": 5 }] },
+      { "id": "T002", "name": "灰檐守望符", "rarity": "N",   "acquire": { "type": "story",     "at": "ch3" },                            "wear_cost": 0, "handlers": [{ "var": "crowd_stirring", "op": "+", "val": 10 }] },
+      { "id": "T003", "name": "铜雀密语符", "rarity": "R",   "acquire": { "type": "shop",      "cost_energy": 30 },                       "wear_cost": 0, "handlers": [{ "var": "mechanism_wit",  "op": "+", "val": 100 }] },
+      { "id": "T004", "name": "白铃赠符",   "rarity": "R",   "acquire": { "type": "story_gift","at": "ch5",  "condition": "trust_bailing>=50" }, "wear_cost": 0, "handlers": [{ "var": "trust_bailing",  "op": "+", "val": 50 }] },
+      { "id": "T005", "name": "柳烟街灯符", "rarity": "N",   "acquire": { "type": "story",     "at": "ch4" },                            "wear_cost": 0, "handlers": [{ "var": "crowd_stirring", "op": "+", "val": 10 }, { "var": "case_reading", "op": "+", "val": 10 }] },
+      { "id": "T006", "name": "丹枫墨签符", "rarity": "R",   "acquire": { "type": "shop",      "cost_energy": 50 },                       "wear_cost": 0, "handlers": [{ "var": "trust_luqingluo","op": "+", "val": 100 }], "conditions": [{ "var": "case_reading", "op": ">=", "val": 10 }] },
+      { "id": "T007", "name": "陆青萝药符", "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 50 },                       "wear_cost": 0, "handlers": [{ "var": "trust_luqingluo","op": "+", "val": 100 }, { "var": "dark_mist", "op": "-", "val": 10 }] },
+      { "id": "T008", "name": "霜白氅符",   "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 50 },                       "wear_cost": 0, "handlers": [{ "var": "case_reading",   "op": "+", "val": 100 }] },
+      { "id": "T009", "name": "旧钟契残符", "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 80 },                       "wear_cost": 1, "handlers": [{ "var": "bell_authority", "op": "+", "val": 80 }], "conditions": [{ "var": "sin_layers", "op": ">=", "val": 1 }] },
+      { "id": "T010", "name": "街坊互保符", "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 80 },                       "wear_cost": 1, "handlers": [{ "var": "alley_survival", "op": "+", "val": 20 }, { "var": "crowd_stirring", "op": "+", "val": 50 }] },
+      { "id": "T011", "name": "回钟大符",   "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 100 },                      "wear_cost": 1, "handlers": [{ "var": "bell_authority", "op": "+", "val": 120 }] },
+      { "id": "T012", "name": "玄铁劲符",   "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 100 },                      "wear_cost": 1, "handlers": [{ "var": "mechanism_wit",  "op": "+", "val": 80 }, { "var": "case_reading", "op": "+", "val": 20 }] },
+      { "id": "T013", "name": "皎月钟符",   "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 120 },                      "wear_cost": 1, "handlers": [{ "var": "trust_tongque",  "op": "+", "val": 80 }], "conditions": [{ "var": "case_reading", "op": ">=", "val": 50 }] },
+      { "id": "T014", "name": "未来案卷·SP","rarity": "SSR", "acquire": { "type": "gacha",     "pool": "future_case" },                   "wear_cost": 0, "handlers": [{ "var": "case_reading", "op": "+", "val": 200 }, { "var": "bell_authority", "op": "+", "val": 200 }] },
+      { "id": "T015", "name": "罪钟共鸣符", "rarity": "SSR", "acquire": { "type": "story",     "at": "ch18", "hidden": true },              "wear_cost": 0, "handlers": [{ "var": "sin_layers", "op": "+", "val": 0 }, { "var": "bell_authority", "op": "+", "val": 50 }] },
+      { "id": "T016", "name": "落梅点雪符", "rarity": "R",   "acquire": { "type": "shop",      "cost_energy": 60 },                       "wear_cost": 0, "handlers": [{ "var": "trust_bailing", "op": "+", "val": 60 }] },
+      { "id": "T017", "name": "玉兔捣霜符", "rarity": "R",   "acquire": { "type": "shop",      "cost_energy": 60 },                       "wear_cost": 0, "handlers": [{ "var": "trust_luqingluo", "op": "+", "val": 60 }] },
+      { "id": "T018", "name": "焚天赤羽符", "rarity": "SR",  "acquire": { "type": "shop",      "cost_energy": 80 },                       "wear_cost": 1, "handlers": [{ "var": "case_reading", "op": "+", "val": 80 }, { "var": "trust_bailing", "op": "+", "val": 30 }] },
+      { "id": "T019", "name": "青竹清影符", "rarity": "N",   "acquire": { "type": "story",     "at": "ch10" },                           "wear_cost": 0, "handlers": [{ "var": "trust_bailing", "op": "+", "val": 30 }, { "var": "case_reading", "op": "+", "val": 20 }] },
+      { "id": "T020", "name": "惊鸿仙羽符", "rarity": "SR",  "acquire": { "type": "achievement","requirement": "collect_3_sr_talismans" }, "wear_cost": 0, "handlers": [{ "var": "trust_bailing", "op": "+", "val": 100 }, { "var": "bell_authority", "op": "+", "val": 100 }] },
+
+      { "id": "V001", "name": "代书正名符·VIP", "rarity": "VIP", "acquire": { "type": "vip", "level": 1 },                          "wear_cost": { "gate_ticket": 1 }, "handlers": [{ "var": "trust_bailing", "op": "+", "val": 150 }, { "var": "trust_luqingluo", "op": "+", "val": 150 }, { "var": "trust_tongque", "op": "+", "val": 150 }] },
+      { "id": "V002", "name": "玉肌云袖符·VIP", "rarity": "VIP", "acquire": { "type": "vip", "level": 1 },                          "wear_cost": { "gate_ticket": 1 }, "handlers": [{ "var": "mechanism_wit",  "op": "+", "val": 100 }, { "var": "case_reading", "op": "+", "val": 50 }] },
+      { "id": "V003", "name": "曜日鎏金符·VIP", "rarity": "VIP", "acquire": { "type": "vip", "level": 1 },                          "wear_cost": { "gate_ticket": 1 }, "handlers": [{ "var": "bell_authority", "op": "+", "val": 150 }] },
+      { "id": "V004", "name": "素心莲衣符·VIP", "rarity": "VIP", "acquire": { "type": "vip", "level": 1 },                          "wear_cost": { "gate_ticket": 1 }, "handlers": [{ "var": "crowd_stirring", "op": "+", "val": 150 }] },
+      { "id": "V005", "name": "钟司背书符·VIP", "rarity": "VIP", "acquire": { "type": "vip", "level": 2, "annual_only": true },     "wear_cost": { "gate_ticket": 2 }, "handlers": [{ "var": "trust_bailing", "op": "+", "val": 200 }, { "var": "trust_luqingluo", "op": "+", "val": 200 }, { "var": "bell_authority", "op": "+", "val": 200 }, { "var": "case_reading", "op": "+", "val": 200 }] }
+    ]
+  },
+
+  "gacha_pool_future_case": {
+    "_note": "未来案卷池 · 30 张收藏图鉴 · 主题化 = 剧情插画残页",
+    "rates": { "SSR": 0.02, "SR": 0.12, "R": 0.40, "N": 0.46 },
+    "pity": { "ssr_hard": 90, "sr_soft": 10 },
+    "cards": [
+      { "id": "F001_SSR", "name": "季临川残影",       "rarity": "SSR", "effect": "全属性+50 · 开 Ch20 隐藏结局 hint", "cg": "cg_father_ghost" },
+      { "id": "F002_SSR", "name": "焚街未来案卷",     "rarity": "SSR", "effect": "全属性+50 · 首次拥有 True End 提示" },
+      { "id": "F003_SSR", "name": "永久代理烙印",     "rarity": "SSR", "effect": "全属性+50 · 附动态 CG" },
+      { "id": "F004_SR", "name": "白铃击钟", "rarity": "SR", "effect": "trust_bailing +30" },
+      { "id": "F005_SR", "name": "陆青萝抽血", "rarity": "SR", "effect": "trust_luqingluo +30" },
+      { "id": "F006_SR", "name": "铜雀撞门", "rarity": "SR", "effect": "trust_tongque +30" },
+      { "id": "F007_SR", "name": "旧钟楼", "rarity": "SR", "effect": "bell_authority +30" },
+      { "id": "F008_SR", "name": "檐灯粥摊", "rarity": "SR", "effect": "alley_survival +30" },
+      { "id": "F009_SR", "name": "黑雾井底", "rarity": "SR", "effect": "case_reading +30" },
+      { "id": "F010_SR", "name": "沈砚清账房", "rarity": "SR", "effect": "case_reading +30" },
+      { "id": "F011_SR", "name": "韩照白手套", "rarity": "SR", "effect": "mechanism_wit +30" },
+      { "id": "F012_SR", "name": "封巷令", "rarity": "SR", "effect": "alley_survival -10 · alert_bellsi 视觉资料" },
+      { "id": "F013_SR", "name": "代理认罪状原件", "rarity": "SR", "effect": "bell_authority +30" },
+      { "id": "F014_R ~ F025_R", "name": "剧情插画 R 卡 × 12", "rarity": "R", "effect": "各类属性 +10" },
+      { "id": "F026_N ~ F030_N", "name": "街景 N 卡 × 5", "rarity": "N", "effect": "无 buff · 图鉴收集" }
+    ]
+  },
+
+  "outfits_bundled_note": "本作不做言情衣橱 · 视觉呈现由 章节 CG + 钟符特效 承载"
+}
