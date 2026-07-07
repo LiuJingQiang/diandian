@@ -30,6 +30,20 @@ body, #root, .game-shell, .game-shell * {
 }
 button { font: inherit; }
 
+.app-version {
+  position: absolute;
+  z-index: 12;
+  top: 12px;
+  right: 14px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.42);
+  color: rgba(255, 247, 232, 0.72);
+  font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
 .game-shell {
   position: relative;
   width: min(100vw, 430px);
@@ -275,6 +289,7 @@ button { font: inherit; }
 .boot-screen.error .boot-bell { background: linear-gradient(145deg, #42110c, #a73628); }
 
 .home-shell {
+  position: relative;
   width: min(100vw, 430px);
   min-height: min(100vh, 956px);
   max-height: 100vh;
@@ -286,6 +301,7 @@ button { font: inherit; }
     linear-gradient(180deg, #10151a 0%, #192430 52%, #080b0e 100%);
   box-shadow: 0 0 0 1px rgba(240, 189, 104, 0.18), 0 32px 120px rgba(0, 0, 0, 0.62);
 }
+.home-version { position: fixed; }
 .home-hero { padding: 8px 4px 20px; }
 .home-eyebrow { margin: 0 0 8px; color: #f0bd68; letter-spacing: 0.18em; font-size: 12px; font-family: Georgia, serif; }
 .home-hero h1 { margin: 0 0 10px; font-size: 34px; letter-spacing: 0.08em; }
