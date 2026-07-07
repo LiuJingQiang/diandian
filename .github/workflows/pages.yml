@@ -31,9 +31,6 @@ jobs:
           cache: npm
           cache-dependency-path: game-frontend/package-lock.json
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Install dependencies
         run: npm ci
 
@@ -58,18 +55,25 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           set -e
-          curl -sS -L -X POST \
+          if curl -fsS -L \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GH_REPO}/pages" >/dev/null; then
+            curl -fsS -L -X PUT \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${GH_REPO}/pages" \
+              -d '{"build_type":"workflow"}' >/dev/null
+          else
+            curl -fsS -L -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             "https://api.github.com/repos/${GH_REPO}/pages" \
-            -d '{"build_type":"workflow"}' \
-          || curl -sS -L -X PUT \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${GH_REPO}/pages" \
-            -d '{"build_type":"workflow"}'
+            -d '{"build_type":"workflow"}' >/dev/null
+          fi
 
       - name: Deploy to GitHub Pages
         id: deployment
