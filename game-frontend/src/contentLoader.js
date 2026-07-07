@@ -2,6 +2,19 @@ function normalizeBasePath(basePath) {
   return basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 }
 
+const APP_BASE = import.meta.env.BASE_URL || '/';
+
+function appPath(path) {
+  const cleanPath = String(path || '').replace(/^\/+/, '');
+  return `${APP_BASE}${cleanPath}`;
+}
+
+function normalizeSourceBasePath(source) {
+  const raw = source.basePath || `/games/${source.id}`;
+  if (/^(https?:|data:)/.test(raw)) return normalizeBasePath(raw);
+  return normalizeBasePath(raw.startsWith('/') ? appPath(raw) : raw);
+}
+
 export function requestedGameId() {
   const params = new URLSearchParams(window.location.search);
   return params.get('game') || '';
@@ -10,20 +23,21 @@ export function requestedGameId() {
 export function assetUrl(source, manifest, key) {
   if (!key) return '';
   const path = manifest[key] || key;
-  if (/^(https?:|data:|\/)/.test(path)) return path;
+  if (/^(https?:|data:)/.test(path)) return path;
+  if (path.startsWith('/')) return appPath(path);
   return `${source.basePath}/${path}`;
 }
 
 export async function loadRegistry() {
-  const registryResponse = await fetch('/games/index.json');
+  const registryResponse = await fetch(appPath('games/index.json'));
   if (!registryResponse.ok) throw new Error('/games/index.json 加载失败，请先运行 npm run import:game');
   const registry = await registryResponse.json();
   if (!Array.isArray(registry) || registry.length === 0) throw new Error('没有已导入的小说资源，请运行 npm run import:game -- --project ../罪钟代理人');
-  return registry.map((item) => ({ ...item, basePath: normalizeBasePath(item.basePath || `/games/${item.id}`) }));
+  return registry.map((item) => ({ ...item, basePath: normalizeSourceBasePath(item) }));
 }
 
 export async function loadGameSummary(source) {
-  const basePath = normalizeBasePath(source.basePath || `/games/${source.id}`);
+  const basePath = normalizeSourceBasePath(source);
   const books = await fetch(`${basePath}/books.json`).then((res) => {
     if (!res.ok) throw new Error(`${basePath}/books.json 加载失败`);
     return res.json();
@@ -63,7 +77,7 @@ export async function loadGameBundle(gameId) {
 
   const id = gameId || requestedGameId() || registry[0]?.id;
   const source = registry.find((item) => item.id === id || item.bookId === id) || registry[0];
-  const basePath = normalizeBasePath(source.basePath || `/games/${source.id}`);
+  const basePath = normalizeSourceBasePath(source);
   const normalized = { ...source, basePath };
   localStorage.setItem('selectedGameId', normalized.id);
 

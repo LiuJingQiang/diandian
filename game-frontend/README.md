@@ -48,6 +48,31 @@ http://127.0.0.1:8788/?game=jinlanchengzui
 
 不带 `game` 参数时，默认使用 `public/games/index.json` 里的第一本。
 
+## GitHub Pages 静态部署
+
+前端不依赖后端，`npm run build` 会把 `public/games/` 下的小说 JSON 和素材一起打进 `dist/`。
+
+本项目已配置：
+
+```text
+../.github/workflows/pages.yml
+vite.config.js base: './'
+```
+
+部署步骤：
+
+1. 在 GitHub 创建仓库并添加 remote。
+2. 推送 `main`。
+3. 在 GitHub 仓库 Settings → Pages 中选择 GitHub Actions。
+4. Actions 完成后访问 Pages URL。
+
+如果仓库名是 `diandain`，访问形式通常是：
+
+```text
+https://<user>.github.io/diandain/
+https://<user>.github.io/diandain/?game=jinlanchengzui
+```
+
 ## 架构原则
 
 - 前端代码只有一套。
