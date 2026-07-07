@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+gen_config.local.json
+.DS_Store

@@ -1,0 +1,11 @@
+{
+  "_note": "小说生成器配置。default_project 相对本目录解析；OpenRouter key 只用于 bg_tag_gen.py --mode llm / choice_gen.py。",
+  "api_key": "",
+  "api_key_env": "OPENROUTER_API_KEY",
+  "default_project": "../罪钟代理人",
+  "base_url": "https://openrouter.ai/api/v1",
+  "text_model": "openai/gpt-5.5",
+  "referer": "https://local.novel.game",
+  "title": "Novel Generator",
+  "timeout_sec": 120
+}
