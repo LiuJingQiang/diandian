@@ -49,32 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Ensure Pages is enabled for Actions
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          set -e
-          if curl -fsS -L \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${GH_REPO}/pages" >/dev/null; then
-            curl -fsS -L -X PUT \
-              -H "Accept: application/vnd.github+json" \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "X-GitHub-Api-Version: 2022-11-28" \
-              "https://api.github.com/repos/${GH_REPO}/pages" \
-              -d '{"build_type":"workflow"}' >/dev/null
-          else
-            curl -fsS -L -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${GH_REPO}/pages" \
-            -d '{"build_type":"workflow"}' >/dev/null
-          fi
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
