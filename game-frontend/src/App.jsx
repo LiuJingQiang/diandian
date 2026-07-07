@@ -3,7 +3,8 @@ import { applyHandlers, conditionsPass, fillText, firstVisibleChat, initialVars 
 import { assetUrl, loadCatalog, loadGameBundle, requestedGameId } from './contentLoader.js';
 import { resolveStageMeta } from './stageConfig.js';
 
-const UI_BASE = '/games/mmbddj/assets/ui';
+const UI_BASE = `${import.meta.env.BASE_URL}games/mmbddj/assets/ui`.replace(/\/$/, '');
+const VERSION = import.meta.env.VITE_APP_VERSION || '0.0.0';
 const actionItems = [
   ['auto', '自动'],
   ['shop', '商城'],
@@ -224,6 +225,7 @@ export default function App() {
   const options = (node.options || []).filter((option) => option.text && conditionsPass(run.vars, option.conditions));
   return (
     <main className="game-shell">
+      <div className="app-version">v{VERSION}</div>
         <div className="scene-layer" style={background ? { backgroundImage: `url(${background})` } : undefined} />
       <div className="smoke-layer" />
 
@@ -351,6 +353,7 @@ function GameModal({ modal, autoSpeed, onSpeedChange, onClose }) {
 function HomeScreen({ games, onOpenGame }) {
   return (
     <main className="home-shell">
+      <div className="app-version home-version">v{VERSION}</div>
       <section className="home-hero">
         <p className="home-eyebrow">DIANDIAN NOVEL GAME</p>
         <h1>互动读书书架</h1>
