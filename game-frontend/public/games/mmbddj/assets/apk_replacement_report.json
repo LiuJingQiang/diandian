@@ -1,0 +1,316 @@
+{
+ "generated_at": "2026-07-06T13:35:47",
+ "source_library": "/Users/liu-jingqiang/Documents/GitHub/diandain/diandian_apk_art_resources",
+ "manifest": [
+  {
+   "key": "cover_book",
+   "status": "replaced",
+   "old": "assets/covers/cover_book.webp",
+   "new": "assets/covers/cover_book.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/55568864984959530.webp",
+   "bytes": 99738
+  },
+  {
+   "key": "char_shenmo",
+   "status": "replaced",
+   "old": "assets/characters/char_shenmo.webp",
+   "new": "assets/characters/char_shenmo.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/45876703523766589.webp",
+   "bytes": 130862
+  },
+  {
+   "key": "avatar_shenmo",
+   "status": "replaced",
+   "old": "assets/characters/avatar_shenmo.webp",
+   "new": "assets/characters/avatar_shenmo.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/46006383887253821.webp",
+   "bytes": 92330
+  },
+  {
+   "key": "char_suqing",
+   "status": "replaced",
+   "old": "assets/characters/char_suqing.webp",
+   "new": "assets/characters/char_suqing.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/45875693384368437.webp",
+   "bytes": 124522
+  },
+  {
+   "key": "avatar_suqing",
+   "status": "replaced",
+   "old": "assets/characters/avatar_suqing.webp",
+   "new": "assets/characters/avatar_suqing.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/46014771102744829.webp",
+   "bytes": 12602
+  },
+  {
+   "key": "char_luxingchen",
+   "status": "replaced",
+   "old": "assets/characters/char_luxingchen.webp",
+   "new": "assets/characters/char_luxingchen.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/45875695481520375.webp",
+   "bytes": 118112
+  },
+  {
+   "key": "avatar_luxingchen",
+   "status": "replaced",
+   "old": "assets/characters/avatar_luxingchen.webp",
+   "new": "assets/characters/avatar_luxingchen.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/46014772679803133.webp",
+   "bytes": 38520
+  },
+  {
+   "key": "char_guzhiwei",
+   "status": "replaced",
+   "old": "assets/characters/char_guzhiwei.webp",
+   "new": "assets/characters/char_guzhiwei.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/45875698954404087.webp",
+   "bytes": 126728
+  },
+  {
+   "key": "avatar_guzhiwei",
+   "status": "replaced",
+   "old": "assets/characters/avatar_guzhiwei.webp",
+   "new": "assets/characters/avatar_guzhiwei.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/48751012390898089.webp",
+   "bytes": 114626
+  },
+  {
+   "key": "char_zhouhang",
+   "status": "replaced",
+   "old": "assets/characters/char_zhouhang.webp",
+   "new": "assets/characters/char_zhouhang.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/45877421102072125.webp",
+   "bytes": 81320
+  },
+  {
+   "key": "avatar_zhouhang",
+   "status": "replaced",
+   "old": "assets/characters/avatar_zhouhang.webp",
+   "new": "assets/characters/avatar_zhouhang.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/46063675680751933.webp",
+   "bytes": 34730
+  },
+  {
+   "key": "char_system",
+   "status": "replaced",
+   "old": "assets/characters/char_system.webp",
+   "new": "assets/characters/char_system.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/46027785994502397.webp",
+   "bytes": 90850
+  },
+  {
+   "key": "avatar_system",
+   "status": "replaced",
+   "old": "assets/characters/avatar_system.webp",
+   "new": "assets/characters/avatar_system.webp",
+   "source_library_path": "assets/flutter_assets/assets/resource/35846688291686881/96189675496016139.webp",
+   "bytes": 14504
+  },
+  {
+   "key": "scene_ch1",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch1.webp",
+   "new": "assets/scenes/scene_ch1.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/splash_bg.webp",
+   "bytes": 212840
+  },
+  {
+   "key": "scene_ch2",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch2.webp",
+   "new": "assets/scenes/scene_ch2.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/ai_chat/chat/chat_bg.webp",
+   "bytes": 14632
+  },
+  {
+   "key": "scene_ch3",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch3.webp",
+   "new": "assets/scenes/scene_ch3.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/ai_chat/album/album_bg.webp",
+   "bytes": 436638
+  },
+  {
+   "key": "scene_ch4",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch4.webp",
+   "new": "assets/scenes/scene_ch4.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/confession/bg.webp",
+   "bytes": 122826
+  },
+  {
+   "key": "scene_ch5",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch5.webp",
+   "new": "assets/scenes/scene_ch5.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/guoqing/main/activity_bg.webp",
+   "bytes": 443730
+  },
+  {
+   "key": "scene_ch6",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch6.webp",
+   "new": "assets/scenes/scene_ch6.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/newer/newer_step1_bg.webp",
+   "bytes": 557626
+  },
+  {
+   "key": "scene_ch7",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch7.webp",
+   "new": "assets/scenes/scene_ch7.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/rank/book_rank_bg.webp",
+   "bytes": 20798
+  },
+  {
+   "key": "scene_ch8",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch8.webp",
+   "new": "assets/scenes/scene_ch8.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/character_collection/character_list_bg.webp",
+   "bytes": 18476
+  },
+  {
+   "key": "scene_ch9",
+   "status": "replaced",
+   "old": "assets/scenes/scene_ch9.webp",
+   "new": "assets/scenes/scene_ch9.webp",
+   "source_library_path": "assets/flutter_assets/assets/images/dabang_new/all_partner_bg.webp",
+   "bytes": 19462
+  }
+ ],
+ "ui": [
+  {
+   "target": "assets/ui/actionbar/auto.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/icon_auto.webp",
+   "bytes": 6646
+  },
+  {
+   "target": "assets/ui/actionbar/shop.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/icon_shop.webp",
+   "bytes": 10916
+  },
+  {
+   "target": "assets/ui/actionbar/wardrobe.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/icon_wardrobe.webp",
+   "bytes": 11152
+  },
+  {
+   "target": "assets/ui/actionbar/menu.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/icon_menu.webp",
+   "bytes": 6310
+  },
+  {
+   "target": "assets/ui/actionbar/back.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/book/icon_visual_back.webp",
+   "bytes": 13378
+  },
+  {
+   "target": "assets/ui/userall/dialog_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/bg_content.webp",
+   "bytes": 6200
+  },
+  {
+   "target": "assets/ui/userall/name_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/bg_name_main.webp",
+   "bytes": 11150
+  },
+  {
+   "target": "assets/ui/userall/name_secondary_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/bg_name_secondary.webp",
+   "bytes": 11614
+  },
+  {
+   "target": "assets/ui/userall/name_left_xiuxian.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/bg_name_left.webp",
+   "bytes": 9452
+  },
+  {
+   "target": "assets/ui/userall/option_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/option_bg_dark.webp",
+   "bytes": 7780
+  },
+  {
+   "target": "assets/ui/userall/option_title_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/bg_option_title.webp",
+   "bytes": 7014
+  },
+  {
+   "target": "assets/ui/userall/energy_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/%E6%B6%88%E8%80%97%E8%83%BD%E9%87%8Fbg.webp",
+   "bytes": 5656
+  },
+  {
+   "target": "assets/ui/userall/energy_light.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/energy_light.webp",
+   "bytes": 2292
+  },
+  {
+   "target": "assets/ui/userall/arrow.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/icon_arrow.webp",
+   "bytes": 302
+  },
+  {
+   "target": "assets/ui/userall/popup_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/reread_dialog_bg.webp",
+   "bytes": 27546
+  },
+  {
+   "target": "assets/ui/userall/toast_bg.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/guoqing/toast_bg.webp",
+   "bytes": 5528
+  },
+  {
+   "target": "assets/ui/userall/close.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/login/close_icon.webp",
+   "bytes": 2206
+  },
+  {
+   "target": "assets/ui/userall/btn.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/userall/bg_btn.webp",
+   "bytes": 1586
+  },
+  {
+   "target": "assets/ui/xiuxian/bg_content.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/bg_content.webp",
+   "bytes": 74202
+  },
+  {
+   "target": "assets/ui/xiuxian/bg_option.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/bg_option.webp",
+   "bytes": 1772
+  },
+  {
+   "target": "assets/ui/xiuxian/bg_option_title.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/bg_option_title.webp",
+   "bytes": 5128
+  },
+  {
+   "target": "assets/ui/xiuxian/icon_arrow_right.webp",
+   "status": "copied",
+   "source_library_path": "assets/flutter_assets/assets/images/xiuxian/icon_arrow_right.webp",
+   "bytes": 4328
+  }
+ ]
+}

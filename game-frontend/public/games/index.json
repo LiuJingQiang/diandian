@@ -1,0 +1,16 @@
+[
+  {
+    "id": "jinlanchengzui",
+    "bookId": "jinlanchengzui",
+    "name": "我在烬岚城替人承罪",
+    "basePath": "/games/jinlanchengzui",
+    "sourceProject": "../罪钟代理人"
+  },
+  {
+    "id": "mmbddj",
+    "bookId": "mmbddj",
+    "name": "命运币的代价",
+    "basePath": "/games/mmbddj",
+    "sourceProject": "../命运币的代价"
+  }
+]

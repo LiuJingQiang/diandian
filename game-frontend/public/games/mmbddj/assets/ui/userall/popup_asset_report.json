@@ -1,0 +1,44 @@
+[
+ {
+  "key": "popup_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/popup_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/reread_dialog_bg.webp",
+  "bytes": 27546
+ },
+ {
+  "key": "archive_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/archive_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/archive_bg.webp",
+  "bytes": 1124290
+ },
+ {
+  "key": "toast_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/toast_bg.webp",
+  "source": "assets/flutter_assets/assets/images/guoqing/toast_bg.webp",
+  "bytes": 5528
+ },
+ {
+  "key": "free_tips",
+  "status": "copied",
+  "target": "assets/ui/userall/free_tips.webp",
+  "source": "assets/flutter_assets/assets/images/userall/free_op_tips.webp",
+  "bytes": 12672
+ },
+ {
+  "key": "close",
+  "status": "copied",
+  "target": "assets/ui/userall/close.webp",
+  "source": "assets/flutter_assets/assets/images/login/close_icon.webp",
+  "bytes": 2206
+ },
+ {
+  "key": "btn",
+  "status": "copied",
+  "target": "assets/ui/userall/btn.webp",
+  "source": "assets/flutter_assets/assets/images/userall/bg_btn.webp",
+  "bytes": 1586
+ }
+]

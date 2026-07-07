@@ -1,0 +1,4176 @@
+{
+ "bookId": "mmbddj",
+ "name": "命运币的代价",
+ "author": "（作者名）",
+ "categories": [
+  "都市",
+  "系统流",
+  "逆袭创业",
+  "多女主"
+ ],
+ "intro": "落魄屌丝沈默继承神秘天命游戏平台，通关限免游戏获得信息类超凡能力，一枚命运币=一年寿命。是白嫖限免，还是氪命换命运？每一次选择都有代价。",
+ "coverKey": "cover_book",
+ "startEnergy": 60,
+ "start": "ch1_s0",
+ "variables": [
+  "主角名字",
+  "寿命",
+  "苏晴好感度",
+  "陆星辞好感度",
+  "顾知微好感度",
+  "读心一瞬",
+  "时线回溯",
+  "商机嗅探",
+  "隐忍",
+  "锋芒",
+  "城府",
+  "赤诚"
+ ],
+ "characters": {
+  "shenmo": {
+   "name": "沈默",
+   "lead": true,
+   "drawingKey": "char_shenmo",
+   "avatarKey": "avatar_shenmo"
+  },
+  "suqing": {
+   "name": "苏晴",
+   "lead": false,
+   "drawingKey": "char_suqing",
+   "avatarKey": "avatar_suqing"
+  },
+  "luxingchen": {
+   "name": "陆星辞",
+   "lead": false,
+   "drawingKey": "char_luxingchen",
+   "avatarKey": "avatar_luxingchen"
+  },
+  "guzhiwei": {
+   "name": "顾知微",
+   "lead": false,
+   "drawingKey": "char_guzhiwei",
+   "avatarKey": "avatar_guzhiwei"
+  },
+  "zhouhang": {
+   "name": "周航",
+   "lead": false,
+   "drawingKey": "char_zhouhang",
+   "avatarKey": "avatar_zhouhang"
+  },
+  "system": {
+   "name": "天命游戏平台",
+   "lead": false,
+   "drawingKey": "char_system",
+   "avatarKey": "avatar_system"
+  }
+ },
+ "nodes": {
+  "ch1_s0": {
+   "id": "ch1_s0",
+   "name": "第1章 三重背刺",
+   "bgKey": "scene_ch1",
+   "sceneName": "三重背刺",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "清晨七点五十分，沈默像往常一样刷卡进公司大门，卡片却在感应器上闪了三次红光。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"沈默是吧？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "保安从岗亭里走出来，语气公式化，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"人事部通知了，你今天不用上去了，东西已经打包好，在前台。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默愣在原地，脑子里过了三秒才反应过来这句话的意思。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"什么叫不用上去了？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"优化名单，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "保安顿了顿,似乎有点不好意思，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"上个月的事你不知道？公司这季度裁了三十个人，都是这种通知方式，别往心里去。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默张了张嘴，最后什么也没说出来。他在这家公司干了三年，从最底层的运营专员做到现在，年前还被主管夸过\"稳定可靠\"，怎么一转眼就成了\"优化名单\"上的一个名字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "前台的纸箱里装着他工位上的东西：一个马克杯，一张团建合照，还有一份没来得及打印完的方案。沈默抱着箱子走出大楼，冬天的风灌进领口，冷得他一哆嗦。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "手机在这时候震了一下。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "suqing",
+     "text": "沈默，我们还是算了吧。你也知道我家里的情况，我需要的是一个能给我安全感的人，不是……对不起。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默盯着这条消息看了很久，久到手机自动锁屏，又被他重新点亮。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "回复“好，我明白了。”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s1"
+    },
+    {
+     "text": "打电话质问“你什么意思？”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [
+    {
+     "var": "主角名字",
+     "method": 5,
+     "ops": [],
+     "list": [
+      {
+       "name": "",
+       "num": 0,
+       "str": "沈默",
+       "vType": 3
+      }
+     ]
+    }
+   ],
+   "optionTitle": "如何处理这一切？"
+  },
+  "ch1_s1": {
+   "id": "ch1_s1",
+   "name": "第1章 三重背刺",
+   "bgKey": "scene_ch1",
+   "sceneName": "三重背刺",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "安全感。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想起半年前苏晴生日，他攒了两个月工资才买得起那条项链；想起上个月苏晴妈妈住院，他跑前跑后垂了三天班；想起两人计划着明年一起租个大点的房子。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "原来这些在\"安全感\"面前，什么都不是。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默把手机揣回兜里，深吸一口气。还有一件事——他和周航合伙做了半年的创业方案，本来约好今天下午一起去谈天使投资，他现在得先去找周航说一声，自己被裁了，这事可能得往后延一延。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航的工位在城市另一头的联合办公空间。沈默抱着纸箱一路辗转公交，赶到的时候看见周航正站在会议室的玻璃门外，和一个西装革履的中年男人握手，脸上是他从没见过的、志得意满的笑。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默推门进去，会议室里的三个人齐刷刷看向他。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "zhouhang",
+     "text": "\"沈默？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航的表情闪过一丝不自然,随即恢复镀笑，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"你怎么来了。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"我们不是约了今天下午——\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "zhouhang",
+     "text": "\"哦，那个啊，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航像是想起什么无关紧要的小事,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"我们方案已经调整了，跟资本这边重新对接了一下，你的部分我们内部消化掉了，你放心。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默这才注意到会议桌上摆着的PPT，标题赫然是他和周航一起熬了三个通宵改出来的商业计划书——只是署名那一栏，已经换成了周航一个人的名字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "故作平静，伺机而动。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s2"
+    },
+    {
+     "text": "当面质问，要求解释。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s2"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何应对周航？"
+  },
+  "ch1_s2": {
+   "id": "ch1_s2",
+   "name": "第1章 三重背刺",
+   "bgKey": "scene_ch1",
+   "sceneName": "三重背刺",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "shenmo",
+     "text": "\"这是我们两个人做的。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默的声音有点发抖。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "zhouhang",
+     "text": "\"沈默，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航叹了口气，语气里带着一种施舍般的耐心，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"创业这个东西，讲的是资源和执行力。你现在什么都没有，方案放你手里也谈不下投资，我拿去谈成了，以后有合适的机会再带你一把，行不行？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那个西装男人饶有兴致地看着这场戏，没有说话。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默抱着纸箱站在那里，忽然觉得很好笑。今天早上七点五十分，他失去了工作；八点二十分，他失去了女朋友；现在，九点四十分，他失去了唯一的朋友和半年的心血。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他没有再说什么，转身推门出去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "外面的天桥上,风更大了。沈默把纸箱放在栏杆边,靠着栏杆坐下,看着桥下车流不息，忽然觉得整个世界都跟自己没什么关系了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "手机又震了一下，这次是一封邮件。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默先生您好，兹通知您，已故远亲林某名下遗产——一份特殊数字资产及配套设备，现依法转移至您名下。请查收随附激活码，及早完成认证以免遗产失效。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默盯着这封邮件，第一反应是诈骗。他甚至没什么\"远亲\"的印象，家里亲戚早就断得七七八八。但闲着也是闲着，他点开了附件里的链接。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "一个陌生的APP弹了出来，界面简陋得像是十年前的网站，中间只有一行字，缓缓浮现：",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**恭喜您，您已成为「天命游戏平台」注册会员。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "仔细研究APP，探寻其中秘密",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s3"
+    },
+    {
+     "text": "这可能是转机，立刻着手认证",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch1_s3"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何应对这份邮件？"
+  },
+  "ch1_s3": {
+   "id": "ch1_s3",
+   "name": "第1章 三重背刺",
+   "bgKey": "scene_ch1",
+   "sceneName": "三重背刺",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "**一年寿命 = 一枚命运币。命运币可购买游戏，通关即得对应超凡能力。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**限免游戏，随意畜玩；氪命游戏，请谨慎选择。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**祝您游戏愉快。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默愣愣地看着这段话，又划了两下屏幕，界面上果然出现了两个分类：\"限免游戏\"和\"氪命游戏\"，后者旁边还标注着一个小小的沙漏图标，闪烁着微弱的红光。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想了想，嘴角忽然勾起一个自己都没察觉到的、带着点自嘲又带着点期待的笑。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"三重背刺都受了，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默低声嘀咕，手指点向",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"限免游戏\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那一栏,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"总不能连便宜都不占一把。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：白嫖第一局）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "先白嫖玩玩看（限免游戏）",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch2_s0"
+    },
+    {
+     "text": "直接氪命换能力（消耗命运币，寿命-1）",
+     "cost": {
+      "energy": 8
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "寿命",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "寿命",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": -1,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      },
+      {
+       "var": "读心一瞬",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "读心一瞬",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 1,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "天命游戏平台已激活，你的选择是——"
+  },
+  "ch2_s0": {
+   "id": "ch2_s0",
+   "name": "第2章 白嫖第一局",
+   "bgKey": "scene_ch2",
+   "sceneName": "白嫖第一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默在天桥上枯坐了半小时，最后还是没忍住,点开了那个简陋的APP。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "限免游戏栏目里躺着一个图标，写着《商海博弈：新手村》，介绍简短得像是敷衍：\"模拟经营推理小游戏，通关获得对应能力，新手教程免费开放。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "图标下面还有一行小字，红色加粗：**警惕代价**。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默犹豫了两秒——反正是限免，能有什么代价——手指还是点了下去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "游戏画面简陋得像是十年前的flash小游戏，一个像素小人站在柜台后面，面前排着几个像素顾客。规则提示只有一行：**\"读懂顾客没说出口的那句话，才能做成生意。\"**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "第一关很简单。顾客问\"这个多少钱\"，嘴上说着\"随便看看\"，眼神却一直盯着角落一件根本没标价的商品。沈默想了两秒，操作像素小人主动介绍了那件商品——顾客立刻成交，还多买了两件。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "第二关难度陡增。三个顾客同时进店，一个抱怨价格贵，一个说要再比较一下，一个沉默不语只是看。沈默盯着屏幕，忽然发现每个顾客头顶会有极细微的、几乎察觉不到的颜色波动——抱怨价格贵的那个顾客，波动是暖黄色，代表\"其实很想要，就是要个心理安慰\"；说要比较的那个是冷蓝色，代表\"已经在别处看过更贵的，此刻是想被说服\"；沉默不语的那个是灰色，代表\"钱不够，但不想被看出来\"。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默凭着这种莫名其妙的直觉，一关接一关地过。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "游戏难度越来越高，从简单的顾客心理，逐渐变成复杂的供应链决策、竞对博弈、甚至是\"识破合作方话里的陷阱\"这种更抽象的关卡。奇怪的是，沈默完全没觉得吃力——每次卡关的瞬间，他脑子里就会自动\"看见\"某种类似弹幕提示的信息，指向对方话语背后真正的意图。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "半小时后，屏幕跳出一行字：",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**通关。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**「商机嗅探」（限定版）已激活，有效期24小时。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默愣了一下，还没反应过来这句话是什么意思，脑子里忽然多了一种从未有过的感知——像是有一张地图在意识深处缓缓展开，模糊地\"看到\"周围几公里内，几个泛着淡淡金光的坐标点。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他鬼使神差地点开其中一个最近的光点——那是一家餐馆门口贴的\"急招兼职，日结\"，普通得不能再普通的招聘启事，招的还是谁都不愿意干的洗碗打杂。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "先观察，了解能力边界。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s1"
+    },
+    {
+     "text": "立刻前往，看看光点是何物。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何利用新能力？"
+  },
+  "ch2_s1": {
+   "id": "ch2_s1",
+   "name": "第2章 白嫖第一局",
+   "bgKey": "scene_ch2",
+   "sceneName": "白嫖第一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "但脑子里那种直觉又冒了出来：**这份兼职背后，藏着一个所有应聘者都会忽略的隐藏条款。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默想了想，反正闲着也是闲着，纸箱往天桥角落一放，直奔那家餐馆。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板是个五十来岁的中年男人，态度爱理不理：\"洗碗打杂，日结两百，你要干就干，别的没有。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"老板，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默看着墙上贴的另一张纸——那是一张几乎被油烟熏得看不清字的",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"店铺转让\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "广告，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"我看你这店是不是要转让？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板愣了一下,警惕地看了他一眼:\"你打听这个干什么，你是同行派来的？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"不是，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默笑了笑,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"我就是随口一问。要是转让,这附近这个位置,加上你这套炒锅设备,应该能卖不少钱吧。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板叹了口气,松懈下来:\"值钱是值钱,可我这店背着房东两万押金的坑,谁接手谁得先把这坑填了,一般人打听清楚都跑了。你要真想干活,先把碗洗了再说别的。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默心里一动——这就是那个\"隐藏条款\"。表面上是招兼职,实际上老板真正想找的,是一个既能打杂又不忌讳这两万坑、能帮他撮合转让的中间人。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "洗碗，暂时不提押金的事。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s2"
+    },
+    {
+     "text": "直接表示能解决押金问题。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s2"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "两万押金，如何应对？"
+  },
+  "ch2_s2": {
+   "id": "ch2_s2",
+   "name": "第2章 白嫖第一局",
+   "bgKey": "scene_ch2",
+   "sceneName": "白嫖第一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "shenmo",
+     "text": "\"老板,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默斟酌着开口,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"我认识几个想开餐馆的朋友,正在到处找铺子。你这两万的坑,我帮你想办法解决,后续转让的事我也帮你牵线,你看行不行？我不要提成,就当帮个忙,顺便挣这两百块日结的工钱。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板将信将疑地看着他,半信半疑地点了点头。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默确实认识几个之前在创业圈子里认识的、正想找铺子的小老板——他晚上随便发了两条朋友圈,当天晚上就有人联系上门看铺。三天后,转让顺利谈成,沈默不仅拿到了老板承诺的中介费,还顺手赚了一笔从没指望过的意外之财。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "数目不算惊天动地,却是沈默失业、分手、被背刺以来,第一笔真正靠自己\"眼光\"赚到的钱。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他站在出租屋窗边,看着手机银行卡的到账提醒,忽然笑出了声。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "白天那些憋屈——被裁员时的猝不及防、苏晴那条\"安全感\"的分手短信、周航志得意满的嘴脸——此刻竟然都变得不那么重要了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"这游戏，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默低声自语，翻开手机上那个简陋的APP界面，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"是真的能改命啊。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他滑动屏幕，看向\"限免游戏\"分类下更多的图标，又忍不住瞟了一眼旁边\"氪命游戏\"那个泛着微弱红光的沙漏图标。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "一个念头悄悄浮了上来：如果限免就已经这么好用，氪命游戏……又会给他什么？",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "先玩限免，观望一下。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s3"
+    },
+    {
+     "text": "直接氪命，速战速决。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch2_s3"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "要花钱氪命吗？"
+  },
+  "ch2_s3": {
+   "id": "ch2_s3",
+   "name": "第2章 白嫖第一局",
+   "bgKey": "scene_ch2",
+   "sceneName": "白嫖第一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "（本章完，下一章：故人上门）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch3_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch3_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《故人上门》尚未解锁"
+  },
+  "ch3_s0": {
+   "id": "ch3_s0",
+   "name": "第3章 故人上门",
+   "bgKey": "scene_ch3",
+   "sceneName": "故人上门",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "第二天上午，沈默正窝在出租屋里研究那个APP的\"限免游戏\"分类，门外忽然传来敲门声。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他打开门，愣了一下。门口站着一个女人，一身剪裁利落的深灰色西装，气质冷淡疏离，身后楼道里隐约能看到一辆黑色商务车停在路边——在这个城中村改造的老式居民楼里，显得格外突兀。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"沈默？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "女人开口，声音不高，却带着一种惯于发号施令的腔调。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"你是？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"陆星辞。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她自我介绍，语气平淡得像是在念一份无关紧要的备忘录，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"星辰资本的人。周航现在的项目，我们参与了A轮。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默瞬间明白了——这女人是冲着昨天那件\"牵线转让\"的小事来的。他侧身让她进来，出租屋逼仄狭小，陆星辞环视一圈，眼神里飘过一丝几乎不加掩饰的轻蔑。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"你和周航的方案，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞开门见山，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"我看过了。执行团队里没有你的名字。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"是啊，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默耸了耸肩，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "“那又如何？”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s1"
+    },
+    {
+     "text": "“我有什么能帮你的吗？”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "赤诚",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "赤诚",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何接话？"
+  },
+  "ch3_s1": {
+   "id": "ch3_s1",
+   "name": "第3章 故人上门",
+   "bgKey": "scene_ch3",
+   "sceneName": "故人上门",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "shenmo",
+     "text": "\"他说他一个人拿去谈更方便。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"那你昨天帮一个小饭馆牵线转让，赚了一笔中介费,是真的？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞的语气听起来是随口一问,但眼神却在沈默脸上停留了半秒——这是在观察他的反应。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默心念一动，指尖那种熟悉的直觉又冒了出来——不是商机嗅探的效果范围（已经过了限免的24小时时限），但那种感知似乎在他体内留下了某种残余，让他隐约能\"听懂\"陆星辞话语背后更深的一层意思。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**她不是随口一问。她是想确认，周航方案里真正值钱的部分,是不是其实在我身上。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默故意露出一点心虚的样子：\"也没赚多少，就是随手帮个忙。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"随手帮个忙,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞重复了一遍这四个字,嘴角勾起一丝若有若无的笑,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"能看穿一个中年老板不敢说出口的两万块坑,还能当天晚上就找到接盘的人,这种'随手',我们投资圈里很多人做十年都未必做得到。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默没接话,只是安静地看着她。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞似乎有些意外他的沉默,继续试探:\"周航跟我们汇报的那份方案里,核心的商业模型有一处逻辑漏洞——获客成本测算比行业均值低了将近40%,我一直觉得不对劲,但周航说不出具体依据。你知道为什么吗？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "这是一个真正的问题,不是试探。沈默能感觉到陆星辞此刻的语气里,那层轻蔑淡了一些,取而代之的是真正的疑惑与探究——这个\"陆星辞\",是个真正在乎数据是否经得起推敲的人,不是那种只看PPT花不花的投资人。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默想了两秒。这份方案他太熟悉了——那40%的获客成本压缩,是他当时反复调研三个渠道数据,硬生生抠出来的一个组合打法，周航压根不清楚背后的逻辑，只记住了那个漂亮的数字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"因为那个测算,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "简述漏洞，点到为止。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s2"
+    },
+    {
+     "text": "详细拆解漏洞原因。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s2"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何回应陆星辞？"
+  },
+  "ch3_s2": {
+   "id": "ch3_s2",
+   "name": "第3章 故人上门",
+   "bgKey": "scene_ch3",
+   "sceneName": "故人上门",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默慢慢开口,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"不是靠某个渠道便宜,是靠三个渠道叠加了一个时间差——A渠道拉新的同一批用户,会在14天后自然涌入B渠道的复购池,这中间有个免费的流量红利期,大部分人测算的时候会把这部分当成'自然流量'排除掉,但其实它是可以被主动设计出来的。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞脸上的表情几乎是瞬间凝固的。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默继续说:\"周航拿的那份方案,如果没有人跟进这个时间差的窗口期,大概三个月后,获客成本就会打回原样,甚至更高——因为窗口期一过,平台算法会把这批用户重新打回'冷启动'标签。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "出租屋里安静了几秒。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"你说的这个,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞的声音低了下去,带着一种被击中要害的警觉,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"周航从来没提过。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"他大概也不知道,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默笑了笑,带着点自己都没察觉到的自嘲,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"这份方案里,好看的数字是他的,能撑住这个数字的逻辑，是我的。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞盯着他看了很久，眼神里的轻蔑早就消失得一干二净，取而代之的是一种审视——像是在重新评估一件她之前完全看漏了的东西。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"你比我想的有意思，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她最终说了这么一句，转身走向门口，走到门边又停下,回头看了他一眼,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "故作高深，不置一词。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s3"
+    },
+    {
+     "text": "坦然微笑，回望她一眼。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch3_s3"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何回应陆星辞？"
+  },
+  "ch3_s3": {
+   "id": "ch3_s3",
+   "name": "第3章 故人上门",
+   "bgKey": "scene_ch3",
+   "sceneName": "故人上门",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "\"如果周航那边三个月后业绩掉下来,你不介意我再来找你聊聊？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默没有立刻回答。他看着陆星辞转身离开,商务车缓缓驶离这条老旧的巷子,忽然觉得,这场看似平静的\"考察\",或许才是他被背刺之后,第一次真正被人当成\"有价值的东西\"来对待。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他低头看了一眼手机上那个APP，那个泛着微弱红光的\"氪命游戏\"图标，忽然觉得,或许自己不该只满足于捡漏那点限免的小便宜。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：氪命一局）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch4_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch4_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《氪命一局》尚未解锁"
+  },
+  "ch4_s0": {
+   "id": "ch4_s0",
+   "name": "第4章 氪命一局",
+   "bgKey": "scene_ch4",
+   "sceneName": "氪命一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "陆星辞走后，沈默在出租屋里来回走了很久。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想明白了一件事：限免游戏给的那些能力,零星、短暂、范围有限,靠这种小恩小惠捡漏,或许能让日子过得不那么惨,但想真正翻身，靠这种\"薅羊毛\"式的速度，太慢了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他打开APP，划到\"氪命游戏\"那一栏。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "界面比限免区肃穆得多，没有花花绿绿的图标，只有一片深色底板,上面列着几个选项，每个选项旁边都标注着消耗——\"消耗命运币 ×1\"\"消耗命运币 ×3\"\"消耗命运币 ×5\"，命运币兑换比例赫然写着：**一年寿命 = 一枚命运币**。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默的手指悬在屏幕上方，很久没有落下。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他今年24岁，如果按照普通人的寿命算，还有五十多年可活。一年，听起来好像不算什么，但沈默很清楚，一旦点下确认，这不是一句空话——是他生命长度里,真真切切被抹掉的整整三百六十五天。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他点开消耗最低的那一档——\"消耗命运币 ×1，解锁《商海博弈：城市争锋》\"，介绍写着：**\"通关即获得商机嗅探能力全面强化，有效期与感知范围大幅提升。风险提示：难度较新手村显著提高，中途失败将额外扣除半年寿命作为惩罚。\"**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默盯着\"额外扣除半年寿命作为惩罚\"这几个字，后背有点发凉。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "这不是一道随便就能白嫖的题目了。这是一场真正的赌局——赌注是他的命。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想起早上七点五十分被保安拦在公司门口的那一刻,想起苏晴那条\"安全感\"的分手短信,想起周航拿着他方案时那副施舍般的笑脸——那些屈辱和不甘,像是压在心口的一块石头,直到此刻才终于找到了一个可以撬动它的杠杆。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"一年寿命，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默低声自言自语，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"换一次真正能翻身的机会，值。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他闭上眼，按下了确认键。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "只为翻身一搏，绝不回头。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch4_s1"
+    },
+    {
+     "text": "小心为上，留意布局之人。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch4_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何看待这场赌局？"
+  },
+  "ch4_s1": {
+   "id": "ch4_s1",
+   "name": "第4章 氪命一局",
+   "bgKey": "scene_ch4",
+   "sceneName": "氪命一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "弹窗一闪而过，没有任何仪式感，只有一行冰冷的系统提示：**\"寿命已扣除，剩余年岁：[已隐藏]。命运币 ×1 已消耗，游戏解锁中……\"**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "紧接着，视野一片模糊白光,再度睁眼时,他已经\"站\"在一个远比新手村复杂得多的模拟场景里——一整座虚拟城市的商业地图铺展在他面前，密密麻麻的商铺、写字楼、竞争对手、供应链节点，每一个都需要他去判断真假、识破陷阱、抓住机会。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "这一次的难度,和新手村完全不是一个量级。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "游戏里的\"顾客\"不再是简单的三个人,而是数百个模拟经济体在同时博弈——沈默必须在信息严重不对等的情况下,判断哪条供应链的报价是虚高试探,哪个\"合作邀约\"背后藏着资金链断裂的陷阱,哪次看似普通的招标其实是竞争对手设的局。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他一度陷入连续误判的困境，眼看着模拟账户的资金一路跳水,几乎要触发\"游戏失败\"的红色警告——那意味着,他不仅这一年白扣了,还要再多扣半年。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默死死盯着屏幕,强迫自己冷静下来。他想起陆星辞说的那句\"你比我想的有意思\"，想起自己拆解出那份方案里\"三个渠道叠加时间差\"的逻辑——那种感觉忽然又回来了。他开始不再被表面的数字迷惑，而是去看每一个决策背后\"没说出口的那句话\"。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "模拟账户的曲线,终于在最后关头止跌回升,一路逆转,最终在系统崩溃线前0.3个百分点的位置，硬生生扛了过去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**通关。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**「商机嗅探」全面强化：有效期由 24 小时提升至 7 天，感知范围由数公里扩展至全市。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默从那种沉浸式的虚拟状态中脱离出来，一身冷汗,靠着床头喘了好几口气。他抬起手,盯着自己的手腕看了很久——那里什么都没有变化,可他清清楚楚地知道,自己身体里，某种看不见的东西,已经真实地少了一年。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他没有再去想那些颓丧的情绪,只是握紧了拳头。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"一年，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默低声说,像是在对自己,也像是在对这个陌生的平台宣誓，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "system",
+     "text": "\"不能白花。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "即刻开始规划，搜寻潜在机会!",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch4_s2"
+    },
+    {
+     "text": "按兵不动，先观察一周市场动态。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch4_s2"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何利用感知提升?"
+  },
+  "ch4_s2": {
+   "id": "ch4_s2",
+   "name": "第4章 氪命一局",
+   "bgKey": "scene_ch4",
+   "sceneName": "氪命一局",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "他重新打开APP,那张属于全市范围的、泛着淡淡金光的商机地图,在他脑海中缓缓展开——这一次,坐标点比昨天多了不止十倍。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：风口初现）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch5_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch5_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《风口初现》尚未解锁"
+  },
+  "ch5_s0": {
+   "id": "ch5_s0",
+   "name": "第5章 风口初现",
+   "bgKey": "scene_ch5",
+   "sceneName": "风口初现",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默盯着脑海里那张缓缓展开的商机地图，忽然注意到，在城市西南角一个不起眼的位置，有一个坐标点的金光,比其他所有点都要亮得多。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "其他坐标点大多零零散散，忽明忽暗，像是些昙花一现的小机会；唯独这一个,亮得近乎刺眼,持续而稳定。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他没有立刻冲过去,而是先冷静下来想了想——如果只靠系统的提示就一头扎进去,跟当年被割韭菜的股民听消息炒股,又有什么区别？他决定先亲自跑一趟,验证这个信号背后到底是什么。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那个坐标点，对应的是城市里一片密集分布着中小商户的老商业街——奶茶店、服装小店、本地餐馆扎堆的地方。沈默逛了整条街,发现一个共同的问题：这些商户几乎都开了短视频账号,却没人做得起来。要么找不到拍摄思路,要么请不起专业团队,要么自己随手拍的内容质量差得不成样子。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他蹲在一家奶茶店门口，跟老板娘聊了半小时，才彻底摸清楚这背后的空白——**这些小商户根本请不起、也用不上那些动辄几万块的专业短视频代运营公司，但他们其实愿意为\"能实际带来客流\"的低成本内容服务付一笔小钱。**大公司看不上这种客单价,专业团队又服务不起这种数量级的小客户,中间形成了一个巨大的市场空白。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默摸着下巴想了想——如果能用AI工具批量生成贴合本地商户特点的短视频脚本、文案、甚至粗剪素材，把成本压到几乎可以忽略的程度,再叠加一点\"人肉包装\"的服务感,这条路完全走得通。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他翻遍了自己那点可怜的积蓄，又刷了信用卡额度，在联合办公空间租了最便宜的一个小工位，一个周末几乎没合眼,靠着这几年运营岗位积累的经验加上对AI工具的摸索,硬是做出了第一版demo——一套针对本地餐饮、零售商户定制的短视频内容自动化方案。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周一早上，他揣着demo，跑了那条商业街上的三家店。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "第一家是家新开的火锅店，老板犹犹豫豫，嘴上说着\"再考虑考虑\"。沈默脑子里那种熟悉的直觉又冒了出来——老板真正担心的不是价格，是怕被\"割韭菜\",之前请过一个所谓的\"网红团队\"拍了几条视频，一分钱效果没见到。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"老板，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默直接开口，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"您上次找的团队，是不是拍完就没人管了，播放量也没起来？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板愣了一下，眼神里的警惕明显松了一些：\"你怎么知道……\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"这行水太深了，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "拍胸脯保证，直接说解决方案。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch5_s1"
+    },
+    {
+     "text": "委婉表达理解，先听他诉苦。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch5_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何打消他顾虑？"
+  },
+  "ch5_s1": {
+   "id": "ch5_s1",
+   "name": "第5章 风口初现",
+   "bgKey": "scene_ch5",
+   "sceneName": "风口初现",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默笑了笑，",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"我这套方案，第一条视频不满意不收钱，您先看效果。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "老板半信半疑地答应了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "第二家和第三家，沈默用同样的方式,精准踩中对方顾虑,连续拿下了试单。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "三天后，第一条视频发出去，火锅店当晚的到店客流明显多了一批，老板兴冲冲地在朋友圈晒出翻台率,还特意标注了沈默工作室的名字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默看着手机银行卡到账的第一笔\"正式客户\"付款——数额不大，只有几千块，却是他这辈子第一次靠自己一手搭起来的东西挣到的钱，跟当年打工领工资的感觉完全不同。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他坐在那个只有几平米的小工位里，郑重地在营业执照申请材料上,给自己这个刚刚起步的小团队起了个名字——**「知微工作室」**，取\"知微见著\"之意，寓意从最微小的机会里,看见别人看不见的东西。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他不知道，这个随口起的名字，会在很多年后，跟另一个\"知微\"，产生一段自己此刻完全无法预料的纠缠。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：意难平的重逢）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch6_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch6_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《意难平的重逢》尚未解锁"
+  },
+  "ch6_s0": {
+   "id": "ch6_s0",
+   "name": "第6章 意难平的重逢",
+   "bgKey": "scene_ch6",
+   "sceneName": "意难平的重逢",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "火锅店那条翻台视频，在本地几个商户群和同城社群里悄悄传开了。有人在评论区问\"这是哪家团队做的\",老板毫不吝啬地把\"知微工作室\"的名字和沈默的联系方式甩了出去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默没想到,这条不起眼的视频,会传到一个他完全没想到的人手里。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那天晚上,他正在工位上改第二家客户的脚本,手机屏幕忽然亮起一条消息——备注还是那个从没改过的名字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "suqing",
+     "text": "看到你朋友转的视频了，你现在自己创业了？",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默盯着这条消息,心跳莫名快了半拍。距离那条\"我们还是算了吧\"的分手消息,才过去不到一个月。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他没有立刻回复,而是先冷静下来,想了想该怎么回应。犹豫了几分钟,还是打了几个字过去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "嗯，刚起步，还在摸索。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "suqing",
+     "text": "挺好的，我就知道你肯定不会一直那样。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "suqing",
+     "text": "最近怎么样？我这边……其实也没有想象中那么好。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默捏着手机,一时没接话。他体内那种因为氪命游戏而残留下来的、类似\"读心\"的直觉又若隐若现地冒了出来——苏晴这句\"没有想象中那么好\",不是随口的客套,那背后带着一种真实的、连她自己可能都不愿意承认的失落。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想起分手前,苏晴总说想要\"安全感\",说他现在的收入撑不起两个人的未来。她那时候提到过一个男人,家境不错，在她妈妈住院那段时间,是那个男人主动垫付了一笔不小的费用——沈默一直以为,苏晴离开自己,是投向了一个确实能给她安全感的人。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "但如果那个人,真的能给她想要的安全感,她现在为什么会说\"没有想象中那么好\"？",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默没有细问,只是回了一句:【怎么了？】",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "suqing",
+     "text": "也没什么，就是最近压力有点大。你要不要出来吃个饭，聊聊？就当老朋友。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "“遇到什么难题了？”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "赤诚",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "赤诚",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch6_s1"
+    },
+    {
+     "text": "“是不是过得不顺心？”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch6_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何回应苏晴？"
+  },
+  "ch6_s1": {
+   "id": "ch6_s1",
+   "name": "第6章 意难平的重逢",
+   "bgKey": "scene_ch6",
+   "sceneName": "意难平的重逢",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默握着手机，那些分手那天的画面又一次涌上来——七点五十分被保安拦在公司门口，八点二十分收到那条\"安全感\"的分手短信,那种被否定、被抛弃的窒息感,他花了不少力气才勉强压下去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "可现在,苏晴主动找上门来,语气里带着一丝他从未在她身上感受过的、小心翼翼的试探——这种感觉很复杂,一半是旧伤又被翻起,一半是某种他自己都不愿承认的、被\"看见\"的满足感。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想了很久,最终只回了一句:",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "最近挺忙的，有空联系。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "发出去之后,他把手机屏幕朝下放在桌上,重新盯着电脑屏幕上还没改完的脚本,努力想让自己集中注意力。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "但那种感觉,像是水面下悄悄泛起的一丝涟漪,并没有真的平息下去。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他心里清楚,自己那道旧伤,或许比他想象中愈合得更慢一些。而苏晴这条消息,恐怕不会是最后一次。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：陆星辞的邀约）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch7_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch7_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《陆星辞的邀约》尚未解锁"
+  },
+  "ch7_s0": {
+   "id": "ch7_s0",
+   "name": "第7章 陆星辞的邀约",
+   "bgKey": "scene_ch7",
+   "sceneName": "陆星辞的邀约",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "三个月后，陆星辞又一次出现在沈默面前——只是这一次，地点不再是他那间逼仄的出租屋，而是知微工作室新租下的、勉强算得上体面的小办公室。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她进门时没有寒暄,直接把一份打印出来的数据报表拍在桌上。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"周航那个项目,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞的声音里带着一丝她自己都没意识到的懊恼,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"获客成本三个月后原样弹回来了,比你说的时间点还早了几天。算法把那批用户重新打回了冷启动标签,现在整条获客曲线,比A轮融资前还难看。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默看着那份报表,没有太多意外——这本来就是他当时推算出来的结果。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"我早说了。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他淡淡道。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "luxingchen",
+     "text": "\"你说了,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞盯着他,语气里带着一种少见的坦率,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"但我没重视，因为那时候我以为周航能补上这个逻辑漏洞。现在证明,他补不上。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她顿了顿,继续说:\"我今天来,不是来找你算旧账的。我是来问你,愿不愿意加入星辰资本，做我们投后管理团队的内容负责人。薪资待遇,我可以给到市场顶格。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默笑了笑,摇了摇头：\"不了。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞皱眉:\"为什么？我给的条件,比你现在这个小作坊挣得多。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "“我志不在此。”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch7_s1"
+    },
+    {
+     "text": "“条件虽好，但心已有所属。”",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch7_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何拒绝陆星辞？"
+  },
+  "ch7_s1": {
+   "id": "ch7_s1",
+   "name": "第7章 陆星辞的邀约",
+   "bgKey": "scene_ch7",
+   "sceneName": "陆星辞的邀约",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "shenmo",
+     "text": "\"这不是钱的问题,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默认真地看着她,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"三个月前你来考察我的时候,是把我当成一件'东西'——一个能验证周航方案漏洞、顺便看看有没有捡漏价值的工具。现在你来找我,依然是想把我'收编'进你的体系里,当一个执行内容负责人的螺丝钉。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他停顿了一下,继续说:\"我不想再给别人打工,哪怕这个'别人'是星辰资本。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞沉默了片刻,眼神里那种审视又浮了上来,但这一次,少了轻蔑,多了一分认真的思考。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"那你想要什么？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"合作，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默说,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "shenmo",
+     "text": "\"不是雇佣。知微工作室现在正在扩大规模,你们资本圈手里握着大把需要内容服务的被投企业,你可以把他们介绍给我,我按市场价接单,同时给你们的被投企业提供比外部代运营公司更懂'小成本快起量'逻辑的服务——你不需要给我发工资,只需要把资源对接给我。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "陆星辞盯着他,忽然笑了——这是沈默第一次看到她真正意义上的笑,不再是那种带着算计和试探的礼貌性表情。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"你比我三个月前想的,还要更有意思，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她说,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"行,就按你说的办。我先给你对接三家被投企业试试,不满意,大家各走各的路。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默伸出手,陆星辞握了上去,力道不轻不重,却带着一种真正意义上的、平等的认可。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "认可她的能力，但不信任。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch7_s2"
+    },
+    {
+     "text": "觉得她有趣，值得合作。",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "赤诚",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "赤诚",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch7_s2"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何看待陆星辞？"
+  },
+  "ch7_s2": {
+   "id": "ch7_s2",
+   "name": "第7章 陆星辞的邀约",
+   "bgKey": "scene_ch7",
+   "sceneName": "陆星辞的邀约",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "送走陆星辞之后,沈默站在办公室窗边,看着楼下车流,心里那种沉甸甸的踏实感,是他被裁员、被甩、被背刺以来,第一次真正感觉到——自己不再是那个只能被别人挑选、被别人施舍的人了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：周航的警觉）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch8_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch8_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《周航的警觉》尚未解锁"
+  },
+  "ch8_s0": {
+   "id": "ch8_s0",
+   "name": "第8章 周航的警觉",
+   "bgKey": "scene_ch8",
+   "sceneName": "周航的警觉",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "周航最近过得并不好。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "自从获客成本三个月后原样弹回,公司业绩曲线一路难看,资本方的脸色也一天比一天差。上周的复盘会上，星辰资本派来的财务顾问,当着所有人的面把那份获客数据摆出来,言辞虽然客气,但话里话外的意思很明白——**这个项目的核心竞争力,可能并不在周航手里。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那天晚上，为了缓和气氛，几个投资圈的朋友拉着周航去应酬。酒过三巡,有人随口提起最近本地圈子里小有名气的一个案例:\"你们听说过'知微工作室'没有？给一堆小商户做内容,便宜是便宜,但效果是真的好,连星辰的星辞姐都亲自去合作了。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "zhouhang",
+     "text": "\"知微工作室？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航随口重复了一句,脸上还挂着敬酒的笑容。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"对啊,创始人挺年轻的,据说之前还打工来着,今年才刚创业。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航手里的酒杯停在半空,脸色以极快的速度沉了下去——他心里那个念头几乎是瞬间冒出来的：**沈默。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他不知道全国有多少个叫\"沈默\"的年轻创业者,但那种直觉,让他几乎立刻确认了答案。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "酒局结束后,周航借着醒酒的借口离开,坐在车里,手指飞快地在手机上敲了几个字,搜出了\"知微工作室\"的公开信息——创始人一栏赫然写着那个他半年多没再联系过的名字。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航盯着屏幕看了很久,一种复杂的情绪在心里翻涌——有嫉妒，有不安，还有一丝连他自己都不愿意承认的、隐隐的恐惧。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他想起半年前那次会议室里的对话,自己是怎么用一副\"讲资源和执行力\"的说辞,把沈默手里那份熬了三个通宵改出来的方案据为己有的。那时候他觉得沈默什么都没有,方案放他手里也谈不成投资,自己拿去谈,才是\"聪明的选择\"。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "但如果沈默真的靠自己的能力,从一无所有做到能被星辰资本主动合作的程度——那说明,当初方案里真正值钱的核心逻辑,或许从来都不是那份PPT本身,而是沈默那个人。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**如果沈默手里还留着更多类似的核心逻辑,一旦被别的资本方彻底挖走,拿去对付自己现在这个项目……**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航越想越坐不住，直接拨通了自己在这个项目背后真正的资本靠山——那个当天在会议室里全程没说话、只是饶有兴致看着这场戏的中年男人。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "她或许只是运气好",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch8_s1"
+    },
+    {
+     "text": "过去的事不值得再想",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "隐忍",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "隐忍",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch8_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "如何看待沈默？"
+  },
+  "ch8_s1": {
+   "id": "ch8_s1",
+   "name": "第8章 周航的警觉",
+   "bgKey": "scene_ch8",
+   "sceneName": "周航的警觉",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "zhouhang",
+     "text": "\"陈总，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航的声音里带着一丝不易察觉的焦虑,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"有个事我觉得得跟您汇报一下。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "电话那头的男人听完周航的描述,沉默了几秒,语气听不出情绪波动:\"哦？这个沈默，倒是有点意思。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"陈总，我们要不要提前做点准备,免得以后被动？\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "电话那头传来一阵轻笑,带着某种周航完全没听出深意的味道。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"既然如此,\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "那个叫",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"陈总\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "的男人缓缓开口,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"那就先让人，查查这个沈默的底。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "周航挂掉电话,长舒一口气,心里那点不安暂时压了下去。他并不知道,这个决定,将会给沈默带来一场远比自己想象中更凶险的风暴——而他自己,不过是这场风暴里,一个最先被抛弃的引线。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：查底暗涌）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "解锁下一章",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch9_s0"
+    },
+    {
+     "text": "看广告免费解锁",
+     "cost": {
+      "energy": 0
+     },
+     "isAd": true,
+     "handlers": [],
+     "conditions": [],
+     "next": "ch9_s0"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "下一章《查底暗涌》尚未解锁"
+  },
+  "ch9_s0": {
+   "id": "ch9_s0",
+   "name": "第9章 查底暗涌",
+   "bgKey": "scene_ch9",
+   "sceneName": "查底暗涌",
+   "isEnd": false,
+   "chats": [
+    {
+     "char": "",
+     "text": "那个自称\"私募基金分析师\"的女人，比周航想象中的任何调查手段都更让沈默感到棘手。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "她叫顾知微,名片上印着某家听起来颇有分量的私募基金,来意说得很得体——\"我们在关注本地几个成长期的小型内容服务商,知微工作室是我们重点考察的标的之一,想跟您聊聊，看看有没有合作或者投资的可能。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默把她请进办公室,给她倒了杯茶,一边应付着寒暄,一边不动声色地打量着她。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "顾知微气质温和,谈吐得体,提的问题也都专业到位——获客成本、客单价、复购率、团队扩张计划,每一个问题都问得很有水准，几乎看不出任何异样。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "但沈默体内那种残留的直觉,却在她开口问到第三个问题的时候,悄然浮现。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**\"你们工作室最初做的第一个案例,那家火锅店,当时你是怎么判断这条街区存在市场空白的？\"**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "这个问题问得太精准了。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "一个真正只是\"关注成长期标的\"的私募分析师，通常只会关心财务数据和增长曲线，不会去深挖一个创业者最初判断商机的思考路径——这种问题,更像是想验证沈默身上某种\"能力\"的真实性和可复制性,而不是单纯的商业尽调。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默心里冷笑了一下,面上却不动声色。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"就是笨办法，\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "他随口应付道,",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "\"蹲点观察,跟商户聊天,顺便看了下同行的报价，拍脑袋判断的。\"",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "顾知微笑了笑,眼神里那种恰到好处的赞许,却让沈默更加确定——她不信这个答案。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**她不是随便一问，她是有备而来。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [
+    {
+     "text": "既然不信，何必再问？",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "锋芒",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "锋芒",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch9_s1"
+    },
+    {
+     "text": "她为何不信，另有目的？",
+     "cost": {
+      "energy": 12
+     },
+     "isAd": false,
+     "handlers": [
+      {
+       "var": "城府",
+       "method": 5,
+       "ops": [
+        "+"
+       ],
+       "list": [
+        {
+         "name": "城府",
+         "num": 0,
+         "str": "",
+         "vType": 1
+        },
+        {
+         "name": "const",
+         "num": 5,
+         "str": "",
+         "vType": 1
+        }
+       ]
+      }
+     ],
+     "conditions": [],
+     "next": "ch9_s1"
+    }
+   ],
+   "diverts": [],
+   "handlers": [],
+   "optionTitle": "她有备而来？"
+  },
+  "ch9_s1": {
+   "id": "ch9_s1",
+   "name": "第9章 查底暗涌",
+   "bgKey": "scene_ch9",
+   "sceneName": "查底暗涌",
+   "isEnd": true,
+   "chats": [
+    {
+     "char": "",
+     "text": "沈默想了想,决定将计就计。他没有戳破对方的伪装，反而主动\"展示\"了一部分实力——挑出一个此刻正在观察但尚未确定的商机线索，故意在顾知微面前\"分析\"了一番,逻辑讲得头头是道,但关键的判断依据,他刻意留了一个漏洞,混入了一点似是而非的运气成分。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "这样一来，如果对方真的是来验证他能力真实性的调查者，回去汇报的时候,拿到的会是一份\"有天赋但也有运气成分,尚不能完全确定\"的模糊结论——这既留住了合作或者被继续观察的空间，又没有真正暴露自己那个\"商机嗅探\"能力的底牌。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "顾知微听完,若有所思地点了点头,又聊了几句无关紧要的话题,便礼貌告辞。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "沈默送她到门口,看着她的车缓缓驶离,脸上笑容淡去，取而代之的是一丝凝重。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "**这个女人,不是普通的私募分析师。她背后,一定有更复杂的目的。**",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "车子驶出街区,拐进一条僻静的小路后,顾知微才靠着车窗，长长地舒了一口气。她拿出手机,给一个存着\"陈叔\"备注的联系人发去一条消息。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "guzhiwei",
+     "text": "陈叔，我见过那个沈默了。他确实有点东西,但他今天给我的答案，感觉留了一手，不像表面那么简单，我需要再确认一下。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "发完这条消息，顾知微望着车窗外飞速掠过的街景,眼神里闪过一丝她自己都说不清的复杂情绪——那不完全是任务执行者该有的冷静,里面掺杂着一点，她此刻还未察觉的，对那个年轻人的好奇。",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "——",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    },
+    {
+     "char": "",
+     "text": "（本章完，下一章：融资风波）",
+     "msgType": "0",
+     "imgKey": "",
+     "conditions": [],
+     "handlers": []
+    }
+   ],
+   "options": [],
+   "diverts": [],
+   "handlers": []
+  }
+ }
+}

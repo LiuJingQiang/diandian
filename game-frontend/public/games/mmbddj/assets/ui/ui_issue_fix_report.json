@@ -1,0 +1,32 @@
+[
+ {
+  "target": "assets/ui/items/option_free_card.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/task_center/icon_options_free.webp",
+  "bytes": 7168,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/items/energy.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/task_center/icon_reward_energy.webp",
+  "bytes": 11052,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/popup_bg.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/task_center_v2/sign_dialog_bg.webp",
+  "bytes": 152966,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/popup_bg_alt.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/dabang/dialog_bg.webp",
+  "bytes": 21220,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/popup_title_bar.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/book/confirm_dialog_title_bar_bg.webp",
+  "bytes": 7096,
+  "status": "copied"
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "target": "assets/ui/actionbar/auto.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_auto.webp",
+  "bytes": 6646
+ },
+ {
+  "target": "assets/ui/actionbar/shop.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_shop.webp",
+  "bytes": 10916
+ },
+ {
+  "target": "assets/ui/actionbar/wardrobe.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_wardrobe.webp",
+  "bytes": 11152
+ },
+ {
+  "target": "assets/ui/actionbar/menu.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_menu.webp",
+  "bytes": 6310
+ },
+ {
+  "target": "assets/ui/actionbar/back.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/book/icon_visual_back.webp",
+  "bytes": 13378
+ }
+]

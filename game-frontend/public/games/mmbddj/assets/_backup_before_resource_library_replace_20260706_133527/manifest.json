@@ -1,0 +1,27 @@
+{
+ "_note": "key -> 本地素材文件。把同名图片丢进对应目录即可生效(支持 webp/png/jpg)。空值或缺文件将显示占位图。",
+ "assets": {
+  "cover_book": "assets/covers/cover_book.webp",
+  "char_shenmo": "assets/characters/char_shenmo.webp",
+  "avatar_shenmo": "assets/characters/avatar_shenmo.webp",
+  "char_suqing": "assets/characters/char_suqing.webp",
+  "avatar_suqing": "assets/characters/avatar_suqing.webp",
+  "char_luxingchen": "assets/characters/char_luxingchen.webp",
+  "avatar_luxingchen": "assets/characters/avatar_luxingchen.webp",
+  "char_guzhiwei": "assets/characters/char_guzhiwei.webp",
+  "avatar_guzhiwei": "assets/characters/avatar_guzhiwei.webp",
+  "char_zhouhang": "assets/characters/char_zhouhang.webp",
+  "avatar_zhouhang": "assets/characters/avatar_zhouhang.webp",
+  "char_system": "assets/characters/char_system.webp",
+  "avatar_system": "assets/characters/avatar_system.webp",
+  "scene_ch1": "assets/scenes/scene_ch1.webp",
+  "scene_ch2": "assets/scenes/scene_ch2.webp",
+  "scene_ch3": "assets/scenes/scene_ch3.webp",
+  "scene_ch4": "assets/scenes/scene_ch4.webp",
+  "scene_ch5": "assets/scenes/scene_ch5.webp",
+  "scene_ch6": "assets/scenes/scene_ch6.webp",
+  "scene_ch7": "assets/scenes/scene_ch7.webp",
+  "scene_ch8": "assets/scenes/scene_ch8.webp",
+  "scene_ch9": "assets/scenes/scene_ch9.webp"
+ }
+}

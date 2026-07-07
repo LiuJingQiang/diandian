@@ -1,0 +1,86 @@
+[
+ {
+  "target": "assets/ui/userall/arrow.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/xiuxian/icon_arrow_right.webp",
+  "bytes": 4328,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/toast_bg.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/chat/var_change_bg.webp",
+  "bytes": 7202,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/close.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/ai_chat/base/close_icon2.webp",
+  "bytes": 846,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/reward_badge.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_award_tips.webp",
+  "bytes": 13304,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/reward_badge_up.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_award_tips_up.webp",
+  "bytes": 13286,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/progress_border.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/progress_border.webp",
+  "bytes": 656,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/progress_bg.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/progress_bg.webp",
+  "bytes": 280,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/affinity_badge.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/icon_collecttion.webp",
+  "bytes": 22416,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/userall/scene_tag.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/chat/var_change_bg.webp",
+  "bytes": 7202,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/book/book_card.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/book/book_volume_bg_3.webp",
+  "bytes": 6362,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/book/book_card_small.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/book/book_volume_bg_2.webp",
+  "bytes": 5410,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/book/cover_frame.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/book_cover_bg.webp",
+  "bytes": 3486,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/book/saved_tip.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/book/book_sen_comment_tips_dark.webp",
+  "bytes": 25070,
+  "status": "copied"
+ },
+ {
+  "target": "assets/ui/book/restart_btn.webp",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_btn.webp",
+  "bytes": 1586,
+  "status": "copied"
+ }
+]

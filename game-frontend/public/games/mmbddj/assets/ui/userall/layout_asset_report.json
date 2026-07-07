@@ -1,0 +1,80 @@
+[
+ {
+  "target": "assets/ui/userall/dialog_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_content.webp",
+  "bytes": 6200
+ },
+ {
+  "target": "assets/ui/userall/name_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_name_main.webp",
+  "bytes": 11150
+ },
+ {
+  "target": "assets/ui/userall/name_secondary_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_name_secondary.webp",
+  "bytes": 11614
+ },
+ {
+  "target": "assets/ui/userall/name_left_xiuxian.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/xiuxian/bg_name_left.webp",
+  "bytes": 9452
+ },
+ {
+  "target": "assets/ui/userall/option_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/option_bg_dark.webp",
+  "bytes": 7780
+ },
+ {
+  "target": "assets/ui/userall/option_title_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_option_title.webp",
+  "bytes": 7014
+ },
+ {
+  "target": "assets/ui/userall/energy_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/%E6%B6%88%E8%80%97%E8%83%BD%E9%87%8Fbg.webp",
+  "bytes": 5656
+ },
+ {
+  "target": "assets/ui/userall/energy_light.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/energy_light.webp",
+  "bytes": 2292
+ },
+ {
+  "target": "assets/ui/userall/arrow.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/xiuxian/icon_arrow.webp",
+  "bytes": 302
+ },
+ {
+  "target": "assets/ui/userall/popup_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/reread_dialog_bg.webp",
+  "bytes": 27546
+ },
+ {
+  "target": "assets/ui/userall/toast_bg.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/guoqing/toast_bg.webp",
+  "bytes": 5528
+ },
+ {
+  "target": "assets/ui/userall/close.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/login/close_icon.webp",
+  "bytes": 2206
+ },
+ {
+  "target": "assets/ui/userall/btn.webp",
+  "status": "copied",
+  "source_library_path": "assets/flutter_assets/assets/images/userall/bg_btn.webp",
+  "bytes": 1586
+ }
+]

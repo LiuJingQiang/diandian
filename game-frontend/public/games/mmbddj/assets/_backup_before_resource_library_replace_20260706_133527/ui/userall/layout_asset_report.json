@@ -1,0 +1,49 @@
+[
+ {
+  "key": "dialog_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/dialog_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/bg_content.webp",
+  "bytes": 6200
+ },
+ {
+  "key": "name_bg",
+  "status": "missing",
+  "source": "assets/flutter_assets/assets/images/userall/bg_name_left.webp"
+ },
+ {
+  "key": "option_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/option_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/option_bg_dark.webp",
+  "bytes": 7780
+ },
+ {
+  "key": "option_title_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/option_title_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/bg_option_title.webp",
+  "bytes": 7014
+ },
+ {
+  "key": "energy_bg",
+  "status": "copied",
+  "target": "assets/ui/userall/energy_bg.webp",
+  "source": "assets/flutter_assets/assets/images/userall/%E6%B6%88%E8%80%97%E8%83%BD%E9%87%8Fbg.webp",
+  "bytes": 5656
+ },
+ {
+  "key": "energy_light",
+  "status": "copied",
+  "target": "assets/ui/userall/energy_light.webp",
+  "source": "assets/flutter_assets/assets/images/userall/energy_light.webp",
+  "bytes": 2292
+ },
+ {
+  "key": "arrow",
+  "status": "copied",
+  "target": "assets/ui/userall/arrow.webp",
+  "source": "assets/flutter_assets/assets/images/xiuxian/icon_arrow.webp",
+  "bytes": 302
+ }
+]
